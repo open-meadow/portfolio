@@ -1,0 +1,15 @@
+.projects {
+  border: 3px solid red;
+  background-color: rgba(106, 212, 135, 0.3);
+  color: black;
+  padding: 2em;
+  display: flex;
+
+  #image {
+    margin: 1em;
+  }
+
+  #details {
+    border: 3px solid blue;
+  }
+}
