@@ -1,7 +1,12 @@
+import Navigation from "../components/javascripts/Navigation";
+
 const Home = () => {
-  return(
-    <p>Poopoo</p>
+  return (
+    <>
+      <Navigation />
+      <p>Poopoo</p>
+    </>
   );
-}
+};
 
 export default Home;
