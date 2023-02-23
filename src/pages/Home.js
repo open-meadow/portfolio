@@ -1,6 +1,7 @@
 import Navigation from "../components/javascripts/Navigation";
 import Intro from "../components/javascripts/Intro";
 import Projects from "../components/javascripts/Projects";
+import About from "../components/javascripts/About";
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <Navigation/>
       <Intro/>
       <Projects/>
-      <p>Poopoo</p>
+      <About/>
     </>
   );
 };
