@@ -1,5 +1,4 @@
 .main-section {
-  border: 3px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,19 +8,58 @@
     flex-wrap: wrap;
     width: 40%;
     justify-content: space-evenly;
-    border: 3px solid red;
 
     &--single {
       border: 3px solid black;
-      padding: 1em;
+      padding: 0.4em;
       border-radius: 1.3em;
 
       span {
         margin-left: 1em;
       }
-
     }
-
   }
 
+  .line {
+    &--first {
+      width: 115em;
+    }
+
+    &--second {
+      width: 20em;
+    }
+
+    &--third {
+      width: 20em;
+    }
+  }
+
+  .working {
+    border: 3px solid red;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    &--border {
+      display: flex;
+      border: 3px solid blue;
+      margin: 1em;
+      padding: 1em;
+    }
+
+    &--details {
+      #work {
+        text-align: left;
+      }
+
+      #notes {
+        text-align: right;
+      }
+
+      &--right {
+        justify-content:flex-end;
+        align-items: end;
+      }
+    }
+  }
 }
