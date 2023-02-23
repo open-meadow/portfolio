@@ -1,6 +1,6 @@
 import Navigation from "../components/javascripts/Navigation";
 import Intro from "../components/javascripts/Intro";
-import Projects from "../components/javascripts/Projects";
+import ProjectSection from "../components/javascripts/ProjectSection";
 import About from "../components/javascripts/About";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Navigation/>
       <Intro/>
-      <Projects/>
+      <ProjectSection/>
       <About/>
     </>
   );

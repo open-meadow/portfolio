@@ -1,6 +1,6 @@
-import "../styles/Projects.scss";
+import "../styles/ProjectSection.scss";
 
-const Projects = () => {
+const ProjectSection = () => {
   return (
     <div className="projects">
       <div id="image">
@@ -22,4 +22,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectSection;

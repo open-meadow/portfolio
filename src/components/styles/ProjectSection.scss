@@ -11,5 +11,8 @@
 
   #details {
     border: 3px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
