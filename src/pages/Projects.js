@@ -2,6 +2,8 @@ import "../components/styles/Projects.scss";
 
 import Navigation from "../components/javascripts/Navigation";
 
+import Carousel from 'react-bootstrap/Carousel';
+
 const Projects = () => {
   return (
     <>
