@@ -7,7 +7,7 @@ const Projects = () => {
     <>
       <Navigation />
       <main className="main-section">
-        <h1>Lorem Ipsum</h1>
+        <h1 id="project-title">Lorem Ipsum</h1>
         <div className="tools">
           <div className="tools--single">
             <img src="https://via.placeholder.com/30x30" />
@@ -72,7 +72,13 @@ const Projects = () => {
           </div>
 
         </div>
+
+        <div className="image-carousel">
+          <img src="https://via.placeholder.com/960x720"/>
+        </div>
+
       </main>
+      <hr />
     </>
   );
 };
