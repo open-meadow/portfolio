@@ -31,9 +31,7 @@ const Projects = () => {
         <div className="working--details">
           <h1 id="work">How it works</h1>
           <hr className="line--second" />
-          <div id="text">
-            {currentPortfolio.how_it_works}
-          </div>
+          <div id="text">{currentPortfolio.how_it_works}</div>
         </div>
         <img src={image} />
       </div>
@@ -48,9 +46,7 @@ const Projects = () => {
         <div className="working--details">
           <h1 id="work">Programming Notes</h1>
           <hr className="line--second" />
-          <div id="text">
-            {currentPortfolio.programming_notes}
-          </div>
+          <div id="text">{currentPortfolio.programming_notes}</div>
         </div>
         <img src={image} />
       </div>
@@ -71,7 +67,20 @@ const Projects = () => {
         </div>
 
         <div className="image-carousel">
-          <img src="https://via.placeholder.com/960x720" />
+          <Carousel>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+          </Carousel>
         </div>
       </main>
       <hr />

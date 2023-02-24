@@ -1,10 +1,25 @@
 import "../styles/ProjectSection.scss";
 
+import { Carousel } from "react-bootstrap";
+
 const ProjectSection = () => {
   return (
     <div className="projects">
       <div id="image">
-        <img src="https://via.placeholder.com/1280x720" />
+      <Carousel>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src="https://via.placeholder.com/960x720" />
+            </Carousel.Item>
+          </Carousel>
       </div>
       <div id="details">
         <h3>Project Name</h3>
