@@ -1,5 +1,5 @@
 const portfolio = {
-  1: {
+  0: {
     name: "Tiny App",
     tools: ["Node.js", "EJS", "Bootstrap CSS"],
     how_it_works:
@@ -12,7 +12,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
   },
-  2: {
+  1: {
     name: "Tweeter",
     tools: ["Node.js", "Sass", "jQuery"],
     how_it_works:
@@ -24,7 +24,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
   },
-  3: {
+  2: {
     name: "Interview Scheduler",
     tools: ["Node.js", "React", "PostgreSQL"],
     how_it_works:
@@ -36,7 +36,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
   },
-  4: {
+  3: {
     name: "Two Sam's and a Rohan",
     tools: ["Node.js", "jQuery", "PostgreSQL"],
     how_it_works:
@@ -49,7 +49,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
   },
-  5: {
+  4: {
     name: "Your-Tube",
     tools: ["Node.js", "React", "PostgreSQL", "FFmpeg"],
     how_it_works:

@@ -1,37 +1,45 @@
 import "../styles/ProjectSection.scss";
 
-import { Carousel } from "react-bootstrap";
+import portfolio from "../../db/project_database";
+
+import { Button, Carousel } from "react-bootstrap";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  console.log("activeIndex", activeIndex);
+  // console.log("activeIndex: ", activeIndex);
+
+  const handleSelect = (selectedIndex, e) => {
+    setActiveIndex(selectedIndex);
+  };
+
   return (
     <div className="projects">
       <div id="image">
-      <Carousel>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
-          </Carousel>
+        <Carousel activeIndex={activeIndex} onSelect={handleSelect}>
+          <Carousel.Item>
+            {<img src="https://via.placeholder.com/960x720" />}
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="https://via.placeholder.com/960x720" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="https://via.placeholder.com/960x720" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="https://via.placeholder.com/960x720" />
+          </Carousel.Item>
+        </Carousel>
       </div>
       <div id="details">
-        <h3>Project Name</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h3>{portfolio[activeIndex].name}</h3>
+        <p>{portfolio[activeIndex].how_it_works}</p>
+        <Link to={`/project/${activeIndex}`}>
+          <Button>More</Button>
+        </Link>
       </div>
     </div>
   );

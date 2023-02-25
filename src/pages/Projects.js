@@ -1,7 +1,7 @@
 import "../components/styles/Projects.scss";
 import portfolio from "../db/project_database";
 import Navigation from "../components/javascripts/Navigation";
-
+import { useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { useParams } from "react-router-dom";
 
@@ -9,6 +9,10 @@ const Projects = () => {
   const { id } = useParams();
   const currentPortfolio = portfolio[id];
   console.log("currentPortfolio: ", currentPortfolio);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const tools = () => {
     const toolButtons = currentPortfolio.tools.map((tool) => {
