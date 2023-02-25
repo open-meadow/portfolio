@@ -3,14 +3,27 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../../contexts/context";
 import portfolio from "../../db/project_database";
+import * as Scroll from "react-scroll";
 
 // import navigation styles
 import "../styles/Navigation.scss";
 
 const Navigation = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+    setTimeout(() => {
+      Scroll.scroller.scrollTo("About", {
+        duration: 500,
+        smooth: true,
+      });
+    }, 100);
+  };
+
   const generateDropdowns = () => {
     const dropdownList = Object.keys(portfolio).map((key) => {
       return (
@@ -35,10 +48,8 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <NavDropdown title="Projects">
-                {generateDropdowns()}
-              </NavDropdown>
-              <Nav.Link>About</Nav.Link>
+              <NavDropdown title="Projects">{generateDropdowns()}</NavDropdown>
+              <Nav.Link onClick={handleClick}>About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>

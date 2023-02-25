@@ -2,7 +2,7 @@ import "../styles/About.scss";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="About" className="about">
       <h1>About Me</h1>
       <h3>Lorem ipsum dolor sit amet</h3>
       <div id="main">
