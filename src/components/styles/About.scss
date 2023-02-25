@@ -1,5 +1,4 @@
 .about {
-  border: 3px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +6,6 @@
 
   #main {
     display: flex;
-    border: 3px solid orange;
 
     #text {
       margin: 1em;
