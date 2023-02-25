@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-
-import './components/styles/App.scss';
+import { AppProvider } from "./contexts/context";
+import "./components/styles/App.scss";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/project/:id" element={<Projects/>}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/project/:id" element={<Projects />}></Route>
         </Routes>
       </Router>
     </div>

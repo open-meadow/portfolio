@@ -1,13 +1,14 @@
 import "../styles/ProjectSection.scss";
 
 import portfolio from "../../db/project_database";
-
+import { useGlobalContext } from "../../contexts/context";
 import { Button, Carousel } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
+  const { activeIndex, setActiveIndex } = useGlobalContext();
 
   console.log("activeIndex", activeIndex);
   // console.log("activeIndex: ", activeIndex);
