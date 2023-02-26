@@ -37,7 +37,7 @@ const ProjectSection = () => {
       </div>
       <div id="details">
         <h3>{portfolio[activeIndex].name}</h3>
-        <p>{portfolio[activeIndex].how_it_works}</p>
+        <p>{portfolio[activeIndex].description}</p>
         <Link to={`/project/${activeIndex}`}>
           <Button>More</Button>
         </Link>
