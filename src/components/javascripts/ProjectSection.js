@@ -22,7 +22,7 @@ const ProjectSection = () => {
       <div id="image">
         <Carousel activeIndex={activeIndex} onSelect={handleSelect}>
           <Carousel.Item>
-            {<img src="https://via.placeholder.com/960x720" />}
+            <img src="../../../../public/images/tinyapp/single-url-page.png" />
           </Carousel.Item>
           <Carousel.Item>
             <img src="https://via.placeholder.com/960x720" />

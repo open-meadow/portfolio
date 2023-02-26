@@ -7,9 +7,9 @@ const portfolio = {
       "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). It allows users to register and login. (passwords saved with military-grade encryption). It allows users to store multiple short URL's and it saves how many times a URL is visited.",
     programming_notes: "Analytics. Just.....analytics.",
     images: [
+      "../../docs/tinyapp/single-url-page.png",
       "https://via.placeholder.com/640x480",
       "https://github.com/open-meadow/tinyapp/blob/master/docs/urls-page.png",
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
   },
