@@ -57,6 +57,18 @@ const Projects = () => {
     );
   };
 
+  const carousel_images = () => {
+    const imageList = currentPortfolio.images.map((image, index) => {
+      return (
+        <Carousel.Item>
+          <img className="--image" src={currentPortfolio.images[index]} width={960} height={640} />
+        </Carousel.Item>
+      );
+    });
+
+    return imageList;
+  };
+
   return (
     <>
       <Navigation />
@@ -72,18 +84,7 @@ const Projects = () => {
 
         <div className="image-carousel">
           <Carousel>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="https://via.placeholder.com/960x720" />
-            </Carousel.Item>
+            {carousel_images()}
           </Carousel>
         </div>
       </main>

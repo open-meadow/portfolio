@@ -5,7 +5,9 @@ import { useGlobalContext } from "../../contexts/context";
 import { Button, Carousel } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import singleUrlPageImg from '../../../images/tinyapp/single-url-page.png';
+
+// import images
+import singleUrlPageImg from "../../images/tinyapp/single-url-page.png";
 
 const ProjectSection = () => {
   // const [activeIndex, setActiveIndex] = useState(0);
@@ -18,12 +20,17 @@ const ProjectSection = () => {
     setActiveIndex(selectedIndex);
   };
 
+  const createCarouselImages = () => {};
+
   return (
     <div className="projects">
       <div id="image">
         <Carousel activeIndex={activeIndex} onSelect={handleSelect}>
           <Carousel.Item>
-            <img src={singleUrlPageImg} />
+            <img
+              src={portfolio[0].images[0]}
+              className="project-img"
+            />
           </Carousel.Item>
           <Carousel.Item>
             <img src="https://via.placeholder.com/960x720" />
