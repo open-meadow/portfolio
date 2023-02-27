@@ -1,8 +1,10 @@
 import "../components/styles/Projects.scss";
 import portfolio from "../db/project_database";
+
 import Navigation from "../components/javascripts/Navigation";
+import ImageCarousel from "../components/javascripts/ImageCarousel";
+
 import { useEffect } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import { useParams } from "react-router-dom";
 
 const Projects = () => {
@@ -14,6 +16,7 @@ const Projects = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // show tools buttons
   const tools = () => {
     const toolButtons = currentPortfolio.tools.map((tool) => {
       return (
@@ -27,6 +30,7 @@ const Projects = () => {
     return <div className="tools">{toolButtons}</div>;
   };
 
+  // text for how it works section
   const how_it_works = () => {
     const image = currentPortfolio.images[0];
 
@@ -42,6 +46,7 @@ const Projects = () => {
     );
   };
 
+  // text for programming notes
   const programming_notes = () => {
     const image = currentPortfolio.images[0];
 
@@ -57,18 +62,6 @@ const Projects = () => {
     );
   };
 
-  const carousel_images = () => {
-    const imageList = currentPortfolio.images.map((image, index) => {
-      return (
-        <Carousel.Item>
-          <img className="--image" src={currentPortfolio.images[index]} width={960} height={640} />
-        </Carousel.Item>
-      );
-    });
-
-    return imageList;
-  };
-
   return (
     <>
       <Navigation />
@@ -82,11 +75,7 @@ const Projects = () => {
           {programming_notes()}
         </div>
 
-        <div className="image-carousel">
-          <Carousel>
-            {carousel_images()}
-          </Carousel>
-        </div>
+        <ImageCarousel currentPortfolio={currentPortfolio}/>
       </main>
       <hr />
     </>
