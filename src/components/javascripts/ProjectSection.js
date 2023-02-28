@@ -25,7 +25,11 @@ const ProjectSection = () => {
   return (
     <div className="projects">
       <div id="image">
-        <Carousel activeIndex={activeIndex} onSelect={handleSelect}>
+        <Carousel
+          activeIndex={activeIndex}
+          onSelect={handleSelect}
+          variant="dark"
+        >
           <Carousel.Item>
             <img src={portfolio[0].images[0]} className="project-img" />
           </Carousel.Item>

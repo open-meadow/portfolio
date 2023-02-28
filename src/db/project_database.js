@@ -5,7 +5,47 @@ const portfolio = {
     name: "Tiny App",
     tools: ["Node.js", "EJS", "Bootstrap CSS"],
     description:
-      "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). It allows users to register and login. (passwords saved with military-grade encryption). It allows users to store multiple short URL's and it saves how many times a URL is visited.",
+      "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly)",
+    features: (
+      <>
+        <div className="working--intro-elements">
+          <div>
+            <h3>The website includes the following features:</h3>
+            <ul id="small-margin">
+              <li>
+                Upon inputting a long URL in the given form, the website
+                generates a short URL. This can be used to navigate to the long
+                URL
+              </li>
+              <li>
+                The Dashboard allows users to view a list of shortened URL's
+                under their account and quickly navigate to them, edit them or
+                delete the URL's.
+              </li>
+              <li>
+                An Edit screen allows users to quickly edit a URL under said ID
+              </li>
+              <li>
+                The screen keeps track of the number of times a URL is visited
+                and displays it to the user
+              </li>
+              <li>
+                Login and Registration capabilities allowing users to only view
+                their URL's
+              </li>
+              <li>
+                Login details are stored in cookies and are not lost upon
+                browser shutdown
+              </li>
+            </ul>
+          </div>
+          {/* <img
+            className="working--intro-elements--image"
+            src={images.tinyapp_urlsPage}
+          /> */}
+        </div>
+      </>
+    ),
     how_it_works:
       "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). It allows users to register and login. (passwords saved with military-grade encryption). It allows users to store multiple short URL's and it saves how many times a URL is visited.",
     programming_notes: "Analytics. Just.....analytics.",

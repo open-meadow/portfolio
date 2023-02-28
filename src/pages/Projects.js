@@ -85,11 +85,13 @@ const Projects = () => {
         <hr className="line--first" />
 
         <div className="working">
+          <div className="working--intro">
+            {currentPortfolio.features}
+            <ImageCarousel currentPortfolio={currentPortfolio} />
+          </div>
           {how_it_works()}
           {programming_notes()}
         </div>
-
-        <ImageCarousel currentPortfolio={currentPortfolio} />
       </main>
       <hr />
       <footer className="github-link">

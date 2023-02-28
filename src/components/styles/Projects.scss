@@ -46,6 +46,23 @@
     display: flex;
     flex-direction: column;
 
+    &--intro {
+      &--intro-elements {
+        display: flex;
+        justify-content: space-between;
+
+        #small-margin {
+          margin-right: 1em;
+        }
+
+        &--image {
+          max-width: 60%;
+          border-radius: 20px;
+          box-shadow: 5px 5px 5px;
+        }
+      }
+    }
+
     &--border {
       display: flex;
       justify-content: space-evenly;

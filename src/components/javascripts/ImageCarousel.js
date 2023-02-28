@@ -9,7 +9,6 @@ const ImageCarousel = (props) => {
       return (
         <Carousel.Item>
           <img
-            className="--image"
             src={currentPortfolio.images[index]}
             width={960}
             height={640}
