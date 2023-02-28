@@ -3,9 +3,13 @@ import portfolio from "../db/project_database";
 
 import Navigation from "../components/javascripts/Navigation";
 import ImageCarousel from "../components/javascripts/ImageCarousel";
+import toolIcons from "../db/toolIcons";
+
+import { BsGithub } from "react-icons/bs";
 
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const Projects = () => {
   const { id } = useParams();
@@ -21,7 +25,7 @@ const Projects = () => {
     const toolButtons = currentPortfolio.tools.map((tool) => {
       return (
         <div className="tools--single">
-          <img src="https://via.placeholder.com/30x30" />
+          {toolIcons[tool]}
           <span>{tool}</span>
         </div>
       );
@@ -36,12 +40,17 @@ const Projects = () => {
 
     return (
       <div className="working--border">
-        <div className="working--details">
+        <div className="working--border--details">
           <h1 id="work">How it works</h1>
           <hr className="line--second" />
           <div id="text">{currentPortfolio.how_it_works}</div>
         </div>
-        <img src={image} width={960} height={640} />
+        <img
+          className="working--border--details--image"
+          src={image}
+          width={960}
+          height={640}
+        />
       </div>
     );
   };
@@ -52,12 +61,17 @@ const Projects = () => {
 
     return (
       <div className="working--border">
-        <div className="working--details">
+        <img
+          className="working--border--details--image"
+          src={image}
+          width={960}
+          height={640}
+        />
+        <div className="working--border--details">
           <h1 id="work">Programming Notes</h1>
           <hr className="line--second" />
           <div id="text">{currentPortfolio.programming_notes}</div>
         </div>
-        <img src={image} width={960} height={640} />
       </div>
     );
   };
@@ -78,6 +92,14 @@ const Projects = () => {
         <ImageCarousel currentPortfolio={currentPortfolio} />
       </main>
       <hr />
+      <footer className="github-link">
+        <Link to={currentPortfolio.githubLink}>
+          <Button className="github-link--separate" variant="outline-dark">
+            <BsGithub />
+            <span id="remove-underline">Github</span>
+          </Button>
+        </Link>
+      </footer>
     </>
   );
 };

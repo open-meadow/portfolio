@@ -15,6 +15,7 @@ const portfolio = {
       images.tinyapp_loginPage,
       images.tinyapp_urlsPageBeforeLogin
     ],
+    githubLink: "https://github.com/open-meadow/tinyapp"
   },
   1: {
     name: "Tweeter",
@@ -28,6 +29,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
+    githubLink: "https://github.com/open-meadow/tweeter"
   },
   2: {
     name: "Interview Scheduler",
@@ -41,6 +43,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
+    githubLink: "https://github.com/open-meadow/scheduler"
   },
   3: {
     name: "Two Sam's and a Rohan",
@@ -55,6 +58,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
+    githubLink: "https://github.com/open-meadow/food-pickup-ordering"
   },
   4: {
     name: "Your-Tube",
@@ -68,10 +72,11 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
+    githubLink: "https://github.com/open-meadow/your-tube"
   },
   5: {
     name: "Jungle",
-    tools: ["Ruby", "on Rails", "ActiveRecord"],
+    tools: ["Ruby", "on Rails", "Cypress"],
     description: "Jungle is an inherited codebase in which I performed several bug fixes and feature additions.",
     how_it_works:
       "Jungle is an inherited codebase in which I performed several bug fixes and feature additions.",
@@ -81,6 +86,7 @@ const portfolio = {
       "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
       "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
     ],
+    githubLink: "https://github.com/open-meadow/jungle"
   },
 };
 
