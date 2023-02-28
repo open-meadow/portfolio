@@ -25,9 +25,9 @@ const portfolio = {
       "Tweeter is a simple, single-page Twitter clone built using HTML, CSS, JS, jQuery, AJAX, Node and Express. This app has strict content moderation policies. Any hate-speech posted gets deleted the second you shut down the server.",
     programming_notes: "This app was my introduction to AJAX, jQuery and Sass.",
     images: [
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/urls-page.png",
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
+      images.tweeter_mainPageDesktop,
+      images.tweeter_mainPageMobile,
+      images.tweeter_scrollToTopButton
     ],
     githubLink: "https://github.com/open-meadow/tweeter"
   },
@@ -39,9 +39,10 @@ const portfolio = {
       "This is an Interview Scheduling App. It allows users to easily create new appointments, by typing in a name, and selecting an interviewer. The information is stored on a database. Therefore, it is not lost upon refresh or closing the browser page. Furthermore, data is stored across devices. It is a responsive app that shows a different layout for computer and mobile devices. It makes use of AJAX requests so that the data gets immediately updated. The webpage was created using Node and React and tested with Jest and Cypress.",
     programming_notes: "My first deployment.",
     images: [
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/urls-page.png",
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
+      images.scheduler_addingNewAppointments,
+      images.scheduler_confirmDeleteAppointment,
+      images.scheduler_displayingAppointments,
+      images.scheduler_mobileView
     ],
     githubLink: "https://github.com/open-meadow/scheduler"
   },
@@ -54,9 +55,14 @@ const portfolio = {
     programming_notes:
       "Surprisingly SMS was not the toughest thing to implement. Because I didn't implement it, my teammate did.",
     images: [
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/urls-page.png",
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/single-url-page.png",
-      "https://github.com/open-meadow/tinyapp/blob/master/docs/create-new-url-page.png",
+      images.fpo_inputDetails,
+      images.fpo_mobileSidebar,
+      images.fpo_mobileView,
+      images.fpo_ordersMain,
+      images.fpo_restaurantComplete,
+      images.fpo_restaurantPending,
+      images.fpo_restaurantTimeUp,
+      images.fpo_restaurantView
     ],
     githubLink: "https://github.com/open-meadow/food-pickup-ordering"
   },
