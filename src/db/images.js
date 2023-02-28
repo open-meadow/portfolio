@@ -26,15 +26,39 @@ import fpo_restaurantPending from "../images/food-pickup-ordering/fpo_restaurant
 import fpo_restaurantTimeUp from "../images/food-pickup-ordering/fpo_restaurantTimeUp.png";
 import fpo_restaurantView from "../images/food-pickup-ordering/fpo_restaurantView.png";
 
+// jungle
+import jungle_adminAuthentication from "../images/jungle/admin_authentication.png";
+import jungle_adminCategories from "../images/jungle/admin_categories.png";
+import jungle_adminDashboard from "../images/jungle/admin_dashboard.png";
+import jungle_createNewSale from "../images/jungle/create_new_sale.png";
+import jungle_email from "../images/jungle/email.png";
+import jungle_reviews from "../images/jungle/reviews.png";
+import jungle_salesDashboard from "../images/jungle/sales_dashboard.png";
+import jungle_showCurrentSale from "../images/jungle/show_current_sale.png";
+import jungle_soldOutBadge from "../images/jungle/sold_out_badge.png";
+
+// your-tube
+import yourTube_addToNewPlaylist from '../images/your-tube/yourTube_addToNewPlaylist.png';
+import yourTube_homePage from '../images/your-tube/yourTube_homePage.png';
+import yourTube_playlistSidebar from '../images/your-tube/yourTube_playlistSidebar.png';
+import yourTube_searchResults from '../images/your-tube/yourTube_searchResults.png';
+import yourTube_videoPageAudioMode from '../images/your-tube/yourTube_videoPageAudioMode.png';
+import yourTube_videoPageDownloads from '../images/your-tube/yourTube_videoPageDownloads.png';
+import yourTube_videoPageInvidiousVideo from '../images/your-tube/yourTube_videoPageInvidiousVideo.png';
+import yourTube_videoPageInvidiousVideoBottom from '../images/your-tube/yourTube_videoPageInvidiousVideoBottom.png';
+import yourTube_videoPagePlaylistView from '../images/your-tube/yourTube_videoPagePlaylistView.png';
+import yourTube_videoPageYoutube from '../images/your-tube/yourTube_videoPageYoutube.png';
+
+
 export const images = {
-  tinyapp_singleUrlPage: tinyapp_singleUrlPage,
-  tinyapp_urlsPage: tinyapp_urlsPage,
-  tinyapp_createNewUrlPage: tinyapp_createNewUrlPage,
-  tinyapp_loginPage: tinyapp_loginPage,
-  tinyapp_urlsPageBeforeLogin: tinyapp_urlsPageBeforeLogin,
-  tweeter_mainPageDesktop: tweeter_mainPageDesktop,
-  tweeter_mainPageMobile: tweeter_mainPageMobile,
-  tweeter_scrollToTopButton: tweeter_scrollToTopButton,
+  tinyapp_singleUrlPage,
+  tinyapp_urlsPage,
+  tinyapp_createNewUrlPage,
+  tinyapp_loginPage,
+  tinyapp_urlsPageBeforeLogin,
+  tweeter_mainPageDesktop,
+  tweeter_mainPageMobile,
+  tweeter_scrollToTopButton,
   scheduler_addingNewAppointments,
   scheduler_confirmDeleteAppointment,
   scheduler_displayingAppointments,
@@ -47,4 +71,23 @@ export const images = {
   fpo_restaurantPending,
   fpo_restaurantTimeUp,
   fpo_restaurantView,
+  jungle_adminAuthentication,
+  jungle_adminCategories,
+  jungle_adminDashboard,
+  jungle_createNewSale,
+  jungle_email,
+  jungle_reviews,
+  jungle_salesDashboard,
+  jungle_showCurrentSale,
+  jungle_soldOutBadge,
+  yourTube_addToNewPlaylist,
+  yourTube_homePage,
+  yourTube_playlistSidebar,
+  yourTube_searchResults,
+  yourTube_videoPageAudioMode,
+  yourTube_videoPageDownloads,
+  yourTube_videoPageInvidiousVideo,
+  yourTube_videoPageInvidiousVideoBottom,
+  yourTube_videoPagePlaylistView,
+  yourTube_videoPageYoutube
 };

@@ -27,19 +27,22 @@ const ProjectSection = () => {
       <div id="image">
         <Carousel activeIndex={activeIndex} onSelect={handleSelect}>
           <Carousel.Item>
-            <img
-              src={portfolio[0].images[0]}
-              className="project-img"
-            />
+            <img src={portfolio[0].images[0]} className="project-img" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://via.placeholder.com/960x720" />
+            <img src={portfolio[1].images[0]} className="project-img" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://via.placeholder.com/960x720" />
+            <img src={portfolio[2].images[0]} className="project-img" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://via.placeholder.com/960x720" />
+            <img src={portfolio[3].images[0]} className="project-img" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={portfolio[4].images[0]} className="project-img" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={portfolio[5].images[0]} className="project-img" />
           </Carousel.Item>
         </Carousel>
       </div>
