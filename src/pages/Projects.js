@@ -41,7 +41,7 @@ const Projects = () => {
           <hr className="line--second" />
           <div id="text">{currentPortfolio.how_it_works}</div>
         </div>
-        <img src={image} />
+        <img src={image} width={960} height={640} />
       </div>
     );
   };
@@ -57,7 +57,7 @@ const Projects = () => {
           <hr className="line--second" />
           <div id="text">{currentPortfolio.programming_notes}</div>
         </div>
-        <img src={image} />
+        <img src={image} width={960} height={640} />
       </div>
     );
   };
@@ -75,7 +75,7 @@ const Projects = () => {
           {programming_notes()}
         </div>
 
-        <ImageCarousel currentPortfolio={currentPortfolio}/>
+        <ImageCarousel currentPortfolio={currentPortfolio} />
       </main>
       <hr />
     </>

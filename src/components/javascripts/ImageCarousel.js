@@ -1,10 +1,10 @@
 import Carousel from "react-bootstrap/Carousel";
+import { CiCircleChevLeft } from "react-icons/ci";
 
 const ImageCarousel = (props) => {
   const { currentPortfolio } = props;
 
   const carousel_images = () => {
-
     const imageList = currentPortfolio.images.map((image, index) => {
       return (
         <Carousel.Item>
@@ -22,10 +22,17 @@ const ImageCarousel = (props) => {
   };
 
   return (
-    <div className="image-carousel">
-      <Carousel variant="dark">
-        {carousel_images()}
-      </Carousel>
+    <div
+      className="image-carousel"
+      prevIcon={
+        <CiCircleChevLeft
+          span
+          aria-hidden="true"
+          className="carousel-control-prev-icon"
+        />
+      }
+    >
+      <Carousel variant="dark">{carousel_images()}</Carousel>
     </div>
   );
 };
