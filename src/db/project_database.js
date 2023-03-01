@@ -40,11 +40,11 @@ const portfolio = {
       </>
     ),
     challenges: [
-      <>
+      <div className="working--challenges--carousel-item">
         <div>
           <h3>Analytics</h3>
-          <hr className="working--challenges--line" />
-          <ul className="working--challenges--text">
+          <hr className="working--challenges--carousel-item--line" />
+          <ul className="working--challenges--carousel-item--text">
             <li>
               This was really tricky to implement. I actually spent a lot of
               time trying to figure something out for this, and I had to get
@@ -68,15 +68,15 @@ const portfolio = {
           </ul>
         </div>
         <img
-          className="working--challenges--image"
+          className="working--challenges--carousel-item--image"
           src={images.tinyapp_singleUrlPage}
         />
-      </>,
-      <>
+      </div>,
+      <div className="working--challenges--carousel-item">
         <div>
-          <h3>Lorem Ipsum</h3>
-          <hr className="working--challenges--line" />
-          <ul className="working--challenges--text">
+          <h3>Analytics</h3>
+          <hr className="working--challenges--carousel-item--line" />
+          <ul className="working--challenges--carousel-item--text">
             <li>
               This was really tricky to implement. I actually spent a lot of
               time trying to figure something out for this, and I had to get
@@ -100,10 +100,10 @@ const portfolio = {
           </ul>
         </div>
         <img
-          className="working--challenges--image"
+          className="working--challenges--carousel-item--image"
           src={images.tinyapp_singleUrlPage}
         />
-      </>,
+      </div>,
     ],
     how_it_works:
       "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). It allows users to register and login. (passwords saved with military-grade encryption). It allows users to store multiple short URL's and it saves how many times a URL is visited.",

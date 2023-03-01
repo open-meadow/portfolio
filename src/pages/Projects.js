@@ -78,9 +78,7 @@ const Projects = () => {
   const challenges = () => {
     const challengesDiv = currentPortfolio.challenges.map((challenge) => {
       return (
-        <div>
           <Carousel.Item>{challenge}</Carousel.Item>
-        </div>
       );
     });
 
@@ -106,10 +104,10 @@ const Projects = () => {
             <ImageCarousel currentPortfolio={currentPortfolio} />
           </div>
           <h2>Challenges</h2>
-          <div className="working--challenges">
+          {/* <div className="working--challenges"> */}
             {/* {currentPortfolio.challenges[0]} */}
             {challenges()}
-          </div>
+          {/* </div> */}
           {how_it_works()}
           {programming_notes()}
         </div>
