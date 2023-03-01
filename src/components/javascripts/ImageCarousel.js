@@ -9,9 +9,8 @@ const ImageCarousel = (props) => {
       return (
         <Carousel.Item>
           <img
+            className="image-carousel--image"
             src={currentPortfolio.images[index]}
-            width={960}
-            height={640}
           />
         </Carousel.Item>
       );
@@ -21,10 +20,7 @@ const ImageCarousel = (props) => {
   };
 
   return (
-    <Carousel
-      className="image-carousel"
-      variant="dark"
-    >
+    <Carousel className="image-carousel" variant="dark">
       {carousel_images()}
     </Carousel>
   );

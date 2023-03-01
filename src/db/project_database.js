@@ -8,8 +8,7 @@ const portfolio = {
       "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly)",
     features: (
       <>
-        <div className="working--intro-elements">
-          <div>
+        <div className="working--intro--elements">
             <h3>The website includes the following features:</h3>
             <ul id="small-margin">
               <li>
@@ -38,11 +37,6 @@ const portfolio = {
                 browser shutdown
               </li>
             </ul>
-          </div>
-          {/* <img
-            className="working--intro-elements--image"
-            src={images.tinyapp_urlsPage}
-          /> */}
         </div>
       </>
     ),
