@@ -81,6 +81,7 @@ const Projects = () => {
       <Navigation />
       <main className="main-section">
         <h1 id="project-title">{currentPortfolio.name}</h1>
+        {currentPortfolio.description}
         {tools()}
         <hr className="line--first" />
 
@@ -89,11 +90,17 @@ const Projects = () => {
             {currentPortfolio.features}
             <ImageCarousel currentPortfolio={currentPortfolio} />
           </div>
+          <h2>Challenges</h2>
+          <div className="working--challenges">
+            {currentPortfolio.challenges[0]}
+          </div>
           {how_it_works()}
           {programming_notes()}
         </div>
       </main>
+
       <hr />
+
       <footer className="github-link">
         <Link to={currentPortfolio.githubLink}>
           <Button className="github-link--separate" variant="outline-dark">

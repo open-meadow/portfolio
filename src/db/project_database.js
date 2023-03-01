@@ -9,37 +9,65 @@ const portfolio = {
     features: (
       <>
         <div className="working--intro--elements">
-            <h3>The website includes the following features:</h3>
-            <ul id="small-margin">
-              <li>
-                Upon inputting a long URL in the given form, the website
-                generates a short URL. This can be used to navigate to the long
-                URL
-              </li>
-              <li>
-                The Dashboard allows users to view a list of shortened URL's
-                under their account and quickly navigate to them, edit them or
-                delete the URL's.
-              </li>
-              <li>
-                An Edit screen allows users to quickly edit a URL under said ID
-              </li>
-              <li>
-                The screen keeps track of the number of times a URL is visited
-                and displays it to the user
-              </li>
-              <li>
-                Login and Registration capabilities allowing users to only view
-                their URL's
-              </li>
-              <li>
-                Login details are stored in cookies and are not lost upon
-                browser shutdown
-              </li>
-            </ul>
+          <h3>The website includes the following features:</h3>
+          <ul id="small-margin">
+            <li>
+              Upon inputting a long URL in the given form, the website generates
+              a short URL. This can be used to navigate to the long URL
+            </li>
+            <li>
+              The Dashboard allows users to view a list of shortened URL's under
+              their account and quickly navigate to them, edit them or delete
+              the URL's.
+            </li>
+            <li>
+              An Edit screen allows users to quickly edit a URL under said ID
+            </li>
+            <li>
+              The screen keeps track of the number of times a URL is visited and
+              displays it to the user
+            </li>
+            <li>
+              Login and Registration capabilities allowing users to only view
+              their URL's
+            </li>
+            <li>
+              Login details are stored in cookies and are not lost upon browser
+              shutdown
+            </li>
+          </ul>
         </div>
       </>
     ),
+    challenges: [
+      <>
+        <div>
+          <h3>Analytics</h3>
+          <hr className="working--challenges--line" />
+          <ul className="working--challenges--text">
+            <li>
+              This was really tricky to implement. I actually spent a lot of
+              time trying to figure something out for this, and I had to get
+              help from a teacher.
+            </li>
+            <li>
+              I was trying to save the number of times a user views a page. For
+              a long time, I was using the cookie-session module from npm to
+              store the value in a cookie. This led to a long and complicated
+              series of steps where the page would crash if I hadn't passed the
+              value correctly to the page. Not to mention, there would be times
+              when the value would start incrementing from zero instead of one
+            </li>
+            <li>As a compromise, I ended up storing the value of timesViewed in the database (a JS object), and I would directly call the value from the database. It's a somewhat hacky solution. It wouldn't work at a large scale, but for the purposes of the exercise, it got the job done.</li>
+          </ul>
+        </div>
+        <img
+            className="working--challenges--image"
+            src={images.tinyapp_singleUrlPage}
+          />
+      </>,
+      <></>,
+    ],
     how_it_works:
       "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). It allows users to register and login. (passwords saved with military-grade encryption). It allows users to store multiple short URL's and it saves how many times a URL is visited.",
     programming_notes: "Analytics. Just.....analytics.",
