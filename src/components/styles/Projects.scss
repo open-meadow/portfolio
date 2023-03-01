@@ -67,11 +67,16 @@
     }
 
     &--challenges {
-      display: flex;
       padding: 1em;
       margin: 1em;
       border: 3px solid rgb(233, 233, 233);
       border-radius: 3em;
+
+      &--carousel-item {
+        border: 3px solid red;
+        // display: flex;
+        height: 100%;
+      }
 
       &--line {
         width: 60%;

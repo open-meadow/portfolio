@@ -9,12 +9,11 @@ import { BsGithub } from "react-icons/bs";
 
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
 
 const Projects = () => {
   const { id } = useParams();
   const currentPortfolio = portfolio[id];
-  console.log("currentPortfolio: ", currentPortfolio);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -76,6 +75,22 @@ const Projects = () => {
     );
   };
 
+  const challenges = () => {
+    const challengesDiv = currentPortfolio.challenges.map((challenge) => {
+      return (
+        <div>
+          <Carousel.Item>{challenge}</Carousel.Item>
+        </div>
+      );
+    });
+
+    return (
+      <div className="working--challenges">
+        <Carousel variant="dark">{challengesDiv}</Carousel>
+      </div>
+    );
+  };
+
   return (
     <>
       <Navigation />
@@ -92,7 +107,8 @@ const Projects = () => {
           </div>
           <h2>Challenges</h2>
           <div className="working--challenges">
-            {currentPortfolio.challenges[0]}
+            {/* {currentPortfolio.challenges[0]} */}
+            {challenges()}
           </div>
           {how_it_works()}
           {programming_notes()}
