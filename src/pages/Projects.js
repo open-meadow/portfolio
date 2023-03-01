@@ -77,14 +77,21 @@ const Projects = () => {
 
   const challenges = () => {
     const challengesDiv = currentPortfolio.challenges.map((challenge) => {
-      return (
-          <Carousel.Item>{challenge}</Carousel.Item>
-      );
+      return <Carousel.Item>{challenge}</Carousel.Item>;
     });
 
     return (
       <div className="working--challenges">
-        <Carousel variant="dark">{challengesDiv}</Carousel>
+        <Carousel
+          variant="dark"
+          prevLabel="Previous"
+          nextLabel="Next"
+          prevIcon={<span className="carousel-control-prev-icon" />}
+          nextIcon={<span className="carousel-control-next-icon" />}
+          className="working--challenges--carousel"
+        >
+          {challengesDiv}
+        </Carousel>
       </div>
     );
   };
@@ -105,8 +112,8 @@ const Projects = () => {
           </div>
           <h2>Challenges</h2>
           {/* <div className="working--challenges"> */}
-            {/* {currentPortfolio.challenges[0]} */}
-            {challenges()}
+          {/* {currentPortfolio.challenges[0]} */}
+          {challenges()}
           {/* </div> */}
           {how_it_works()}
           {programming_notes()}

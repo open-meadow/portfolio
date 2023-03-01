@@ -40,11 +40,11 @@ const portfolio = {
       </>
     ),
     challenges: [
-      <div className="working--challenges--carousel-item">
+      <div className="working--challenges--carousel--item">
         <div>
           <h3>Analytics</h3>
-          <hr className="working--challenges--carousel-item--line" />
-          <ul className="working--challenges--carousel-item--text">
+          <hr className="working--challenges--carousel--item--line" />
+          <ul className="working--challenges--carousel--item--text">
             <li>
               This was really tricky to implement. I actually spent a lot of
               time trying to figure something out for this, and I had to get
@@ -68,39 +68,7 @@ const portfolio = {
           </ul>
         </div>
         <img
-          className="working--challenges--carousel-item--image"
-          src={images.tinyapp_singleUrlPage}
-        />
-      </div>,
-      <div className="working--challenges--carousel-item">
-        <div>
-          <h3>Analytics</h3>
-          <hr className="working--challenges--carousel-item--line" />
-          <ul className="working--challenges--carousel-item--text">
-            <li>
-              This was really tricky to implement. I actually spent a lot of
-              time trying to figure something out for this, and I had to get
-              help from a teacher.
-            </li>
-            <li>
-              I was trying to save the number of times a user views a page. For
-              a long time, I was using the cookie-session module from npm to
-              store the value in a cookie. This led to a long and complicated
-              series of steps where the page would crash if I hadn't passed the
-              value correctly to the page. Not to mention, there would be times
-              when the value would start incrementing from zero instead of one
-            </li>
-            <li>
-              As a compromise, I ended up storing the value of timesViewed in
-              the database (a JS object), and I would directly call the value
-              from the database. It's a somewhat hacky solution. It wouldn't
-              work at a large scale, but for the purposes of the exercise, it
-              got the job done.
-            </li>
-          </ul>
-        </div>
-        <img
-          className="working--challenges--carousel-item--image"
+          className="working--challenges--carousel--item--image"
           src={images.tinyapp_singleUrlPage}
         />
       </div>,

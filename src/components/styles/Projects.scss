@@ -73,27 +73,41 @@
       border-radius: 3em;
       height: 100%;
 
-      &--carousel-item {
-        display: flex;
-        justify-content:space-between;
-        height: 20em;
-
-        &--line {
-          width: 60%;
+      &--carousel {
+        .carousel-control-prev,
+        .carousel-control-next {
+          top: 25em;
         }
 
-        &--text {
-          width: 80%;
-          
-        }
+        &--item {
+          display: flex;
+          justify-content: center;
+          height: 30em;
+          width: 100%;
 
-        &--image {
-          width: 30em;
-          height: auto;
-          border: 1px solid rgb(194, 194, 194);
-          border-radius: 3em;
+          &--line {
+            width: 60%;
+          }
+
+          &--text {
+            width: 90%;
+          }
+
+          &--image {
+            width: 50em;
+            height: 25em;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 3em;
+          }
         }
       }
+
+      // &--carousel-item {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   height: 20em;
+
+      // }
     }
 
     &--border {
@@ -130,10 +144,6 @@
         }
       }
     }
-  }
-
-  .carousel-control-prev-icon {
-    border: 3px solid red;
   }
 }
 
