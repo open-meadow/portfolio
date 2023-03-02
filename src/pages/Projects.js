@@ -103,7 +103,6 @@ const Projects = () => {
         <h1 id="project-title">{currentPortfolio.name}</h1>
         {currentPortfolio.description}
         <br/>
-        <br/>
         {tools()}
         <hr className="line--first" />
 
@@ -115,7 +114,12 @@ const Projects = () => {
           <br />
           <h2>Challenges</h2>
           {challenges()}
+          <br />
+          {currentPortfolio.lessons_learnt}
         </div>
+
+
+
       </main>
 
       <hr />
