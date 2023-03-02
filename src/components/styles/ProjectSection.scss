@@ -1,8 +1,12 @@
 .projects {
   background-color: rgba(106, 212, 135, 0.3);
+  text-shadow: none;
   color: black;
   padding: 2em;
   display: flex;
+  border-radius: 5em;
+  width: 95%;
+  margin-left: 3em;
 
   #image {
     margin: 1em;
