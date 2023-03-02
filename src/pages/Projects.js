@@ -102,6 +102,8 @@ const Projects = () => {
       <main className="main-section">
         <h1 id="project-title">{currentPortfolio.name}</h1>
         {currentPortfolio.description}
+        <br/>
+        <br/>
         {tools()}
         <hr className="line--first" />
 
@@ -110,13 +112,9 @@ const Projects = () => {
             {currentPortfolio.features}
             <ImageCarousel currentPortfolio={currentPortfolio} />
           </div>
+          <br />
           <h2>Challenges</h2>
-          {/* <div className="working--challenges"> */}
-          {/* {currentPortfolio.challenges[0]} */}
           {challenges()}
-          {/* </div> */}
-          {how_it_works()}
-          {programming_notes()}
         </div>
       </main>
 

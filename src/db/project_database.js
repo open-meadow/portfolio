@@ -5,7 +5,7 @@ const portfolio = {
     name: "Tiny App",
     tools: ["Node.js", "EJS", "Bootstrap CSS"],
     description:
-      "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly)",
+      "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). It was created during my studies at Lighthouse Labs, and served as an introduction to several aspects of full-stack web development.",
     features: (
       <>
         <div className="working--intro--elements">
@@ -72,10 +72,28 @@ const portfolio = {
           src={images.tinyapp_singleUrlPage}
         />
       </div>,
+            <div className="working--challenges--carousel--item">
+            <div>
+              <h3>User Authentication</h3>
+              <hr className="working--challenges--carousel--item--line" />
+              <ul className="working--challenges--carousel--item--text">
+                <li>
+                  Upon filling the form and clicking "submit", the app checks if the user exists in the database. As I hadn't yet learnt SQL, I was storing the details in a JavaScript object.
+                </li>
+                <li>
+                  If the user did not already exist, the app would create a new user. It was then hash the given password using the bcrypt module from npm.
+                </li>
+                <li>
+                  During login, I had initially made an error. When logging in, instead of checking if the supplied password matched the one in the database, I had checked if the supplied password was equal to itself. It was quite funny once it was pointed out to me, and I have since fixed the mistake. 
+                </li>
+              </ul>
+            </div>
+            <img
+              className="working--challenges--carousel--item--image"
+              src={images.tinyapp_loginPage}
+            />
+          </div>,
     ],
-    how_it_works:
-      "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). It allows users to register and login. (passwords saved with military-grade encryption). It allows users to store multiple short URL's and it saves how many times a URL is visited.",
-    programming_notes: "Analytics. Just.....analytics.",
     images: [
       images.tinyapp_singleUrlPage,
       images.tinyapp_urlsPage,
