@@ -1,5 +1,3 @@
-import { images } from "./images";
-
 import tinyapp from "./projects/0_tinyapp";
 import tweeter from "./projects/1_tweeter";
 import scheduler from "./projects/2_scheduler";
