@@ -17,28 +17,28 @@ const tweeter = {
         <h3>The website includes the following features:</h3>
         <ul id="small-margin">
           <li>
-            Upon inputting a long URL in the given form, the website generates a
-            short URL. This can be used to navigate to the long URL
+            The user can use the text box to create and submit text under a
+            limit of 140 characters.
           </li>
           <li>
-            The Dashboard allows users to view a list of shortened URL's under
-            their account and quickly navigate to them, edit them or delete the
-            URL's.
+            A character counter that counts down from 140 and updates
+            automatically based on the number of characters a user has typed.
           </li>
           <li>
-            An Edit screen allows users to quickly edit a URL under said ID
+            If it goes above the limit, the counter turns red and shows the
+            extra number of characters. It also shows an error if the user tries to submit.
           </li>
           <li>
-            The screen keeps track of the number of times a URL is visited and
-            displays it to the user
+            If the character length is valid, it submits the text as a new tweet
+            (in the same format as the others).
           </li>
           <li>
-            Login and Registration capabilities allowing users to only view
-            their URL's
+            Randomly generates a new user id and profile picture for each tweet.
+            (For practice purposes)
           </li>
           <li>
-            Login details are stored in cookies and are not lost upon browser
-            shutdown
+            Alternate view for mobile devices. A scroll-to-top button to
+            automatically scroll up.
           </li>
         </ul>
       </div>
@@ -47,25 +47,17 @@ const tweeter = {
   challenges: [
     <div className="working--challenges--carousel--item">
       <div>
-        <h3>User Authentication</h3>
+        <h3>Character Counter</h3>
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            Upon filling the form and clicking "submit", the app checks if the
-            user exists in the database. As I hadn't yet learnt SQL, I was
-            storing the details in a JavaScript object.
+            The character counter dynamically updates as the user types.
           </li>
           <li>
-            If the user did not already exist, the app would create a new user.
-            It was then hash the given password using the bcrypt module from
-            npm.
+            To implement this, I had to use jQuery to select the counter element (the text that says 140) and convert that to a jQuery object. Then I made it so it would constantly check the length of the string the user had input in the text field.
           </li>
           <li>
-            During login, I had initially made an error. When logging in,
-            instead of checking if the supplied password matched the one in the
-            database, I had checked if the supplied password was equal to
-            itself. It was quite funny once it was pointed out to me, and I have
-            since fixed the mistake.
+            If (140 - length) was lesser than zero, the counter turns red and trying to submit instead shows an error.
           </li>
         </ul>
       </div>

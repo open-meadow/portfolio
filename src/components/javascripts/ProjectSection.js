@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 // import images
 import singleUrlPageImg from "../../images/tinyapp/single-url-page.png";
+import { BsGithub } from "react-icons/bs";
 
 const ProjectSection = () => {
   // const [activeIndex, setActiveIndex] = useState(0);
@@ -46,15 +47,22 @@ const ProjectSection = () => {
           <Carousel.Item>
             <img src={portfolio[5].images[0]} className="project-img" />
           </Carousel.Item>
-
         </Carousel>
       </div>
-      <div id="details">
-        <h3>{portfolio[activeIndex].name}</h3>
-        <p>{portfolio[activeIndex].description}</p>
-        <Link to={`/project/${activeIndex}`}>
-          <Button>More</Button>
-        </Link>
+      <div className="details">
+        <div className="details--info">
+          <h2>{portfolio[activeIndex].name}</h2>
+          <p>{portfolio[activeIndex].description}</p>
+        </div>
+        <div className="details--buttons">
+          <Link to={`/project/${activeIndex}`}>
+            <Button size="lg">Info</Button>
+          </Link>
+          <Button className="github-link--separate" variant="dark" size="lg">
+            <BsGithub />
+            <span id="remove-underline">Github</span>
+          </Button>
+        </div>
       </div>
     </div>
   );

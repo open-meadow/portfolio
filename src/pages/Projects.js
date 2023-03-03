@@ -99,39 +99,37 @@ const Projects = () => {
   return (
     <>
       <Navigation />
-      <main className="main-section">
-        <h1 id="project-title">{currentPortfolio.name}</h1>
-        {currentPortfolio.description}
-        <br/>
-        {tools()}
-        <hr className="line--first" />
+      <main>
+        <div className="main-section">
+          <h1 id="project-title">{currentPortfolio.name}</h1>
+          {currentPortfolio.description}
+          <br />
+          {tools()}
+          <hr className="line--first" />
 
-        <div className="working">
-          <div className="working--intro">
-            {currentPortfolio.features}
-            <ImageCarousel currentPortfolio={currentPortfolio} />
+          <div className="working">
+            <div className="working--intro">
+              {currentPortfolio.features}
+              <ImageCarousel currentPortfolio={currentPortfolio} />
+            </div>
+            <hr/>
+            <h2>Challenges</h2>
+            {challenges()}
+            <hr />
+            {currentPortfolio.lessons_learnt}
           </div>
-          <br />
-          <h2>Challenges</h2>
-          {challenges()}
-          <br />
-          {currentPortfolio.lessons_learnt}
+          <hr />
+
+          <footer className="github-link">
+            <Link to={currentPortfolio.githubLink}>
+              <Button className="github-link--separate" variant="outline-light">
+                <BsGithub />
+                <span id="remove-underline">Github</span>
+              </Button>
+            </Link>
+          </footer>
         </div>
-
-
-
       </main>
-
-      <hr />
-
-      <footer className="github-link">
-        <Link to={currentPortfolio.githubLink}>
-          <Button className="github-link--separate" variant="outline-dark">
-            <BsGithub />
-            <span id="remove-underline">Github</span>
-          </Button>
-        </Link>
-      </footer>
     </>
   );
 };

@@ -12,16 +12,25 @@
     margin: 1em;
   }
 
-  #details {
+  .details {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 1s ease-in-out;
+
+    &--info {
+      height: 100%;
+    }
+
+    &--buttons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 60%;
+    }
   }
 
   .project-img {
-    max-width: 960px;
-    max-height: 720px;
-    aspect-ratio: 16 / 9;
+    width: 720px;
+    height: 405px;
   }
 }
