@@ -9,6 +9,10 @@ import tinyapp_urlsPageBeforeLogin from "../images/tinyapp/urls-page-before-logi
 import tweeter_mainPageDesktop from "../images/tweeter/main-page-desktop.png";
 import tweeter_mainPageMobile from "../images/tweeter/main-page-mobile.png";
 import tweeter_scrollToTopButton from "../images/tweeter/scroll-to-top-button.png";
+import tweeter_characterCounter from "../images/tweeter/character-counter.png";
+import tweeter_createTweetMobile from "../images/tweeter/create-tweet-mobile.png";
+import tweeter_errorIfTextIsTooLong from "../images/tweeter/error_if_text_is_too_long.png";
+import tweeter_protectAgainstXSS from "../images/tweeter/tweeter_protectAgainstXSS.png";
 
 // scheduler
 import scheduler_displayingAppointments from "../images/scheduler/1-displaying_appointments.png";
@@ -59,6 +63,10 @@ export const images = {
   tweeter_mainPageDesktop,
   tweeter_mainPageMobile,
   tweeter_scrollToTopButton,
+  tweeter_characterCounter,
+  tweeter_createTweetMobile,
+  tweeter_errorIfTextIsTooLong,
+  tweeter_protectAgainstXSS,
   scheduler_addingNewAppointments,
   scheduler_confirmDeleteAppointment,
   scheduler_displayingAppointments,

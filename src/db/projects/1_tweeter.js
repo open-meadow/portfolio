@@ -26,7 +26,8 @@ const tweeter = {
           </li>
           <li>
             If it goes above the limit, the counter turns red and shows the
-            extra number of characters. It also shows an error if the user tries to submit.
+            extra number of characters. It also shows an error if the user tries
+            to submit.
           </li>
           <li>
             If the character length is valid, it submits the text as a new tweet
@@ -50,52 +51,69 @@ const tweeter = {
         <h3>Character Counter</h3>
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
+          <li>The character counter dynamically updates as the user types.</li>
           <li>
-            The character counter dynamically updates as the user types.
+            To implement this, I had to use jQuery to select the counter element
+            (the text that says 140) and convert that to a jQuery object. Then I
+            made it so it would constantly check the length of the string the
+            user had input in the text field.
           </li>
           <li>
-            To implement this, I had to use jQuery to select the counter element (the text that says 140) and convert that to a jQuery object. Then I made it so it would constantly check the length of the string the user had input in the text field.
-          </li>
-          <li>
-            If (140 - length) was lesser than zero, the counter turns red and trying to submit instead shows an error.
+            If (140 - length) was lesser than zero, the counter turns red and
+            trying to submit instead shows an error.
           </li>
         </ul>
       </div>
       <img
         className="working--challenges--carousel--item--image"
-        src={images.tinyapp_loginPage}
+        src={images.tweeter_errorIfTextIsTooLong}
       />
     </div>,
     <div className="working--challenges--carousel--item">
       <div>
-        <h3>Analytics</h3>
+        <h3>IIFE's</h3>
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            This was really tricky to implement. I actually spent a lot of time
-            trying to figure something out for this, and I had to get help from
-            a teacher.
+            After coding the webpage, I refactored the code using IIFE's
+            (Immediately Invoked Function Expressions). This was a more advanced
+            concept I hadn't yet learnt at the time.
           </li>
           <li>
-            I was trying to save the number of times a user views a page. For a
-            long time, I was using the cookie-session module from npm to store
-            the value in a cookie. This led to a long and complicated series of
-            steps where the page would crash if I hadn't passed the value
-            correctly to the page. Not to mention, there would be times when the
-            value would start incrementing from zero instead of one
+            This helped to better organize the code, it created a private scope
+            so that the variables and functions could not be declared from
+            outside the modules. It apparently also increases performance, but
+            for my purposes, it was negligible.
           </li>
           <li>
-            As a compromise, I ended up storing the value of timesViewed in the
-            database (a JS object), and I would directly call the value from the
-            database. It's a somewhat hacky solution. It wouldn't work at a
-            large scale, but for the purposes of the exercise, it got the job
-            done.
+            I don't think this was strictly necessary. (I wasn't using a global
+            scope or any repeating function names). But it made the code more
+            readable and work better. And I learnt something from it.
           </li>
         </ul>
       </div>
       <img
         className="working--challenges--carousel--item--image"
-        src={images.tinyapp_singleUrlPage}
+        src={images.tweeter_characterCounter}
+      />
+    </div>,
+    <div className="working--challenges--carousel--item">
+      <div>
+        <h3>Protection against XSS Injections</h3>
+        <hr className="working--challenges--carousel--item--line" />
+        <ul className="working--challenges--carousel--item--text">
+          <li>
+            If a user were to type, say, 
+            <code>$("body").empty();</code> into the text box, it would display as a tweet instead of clearing the body. 
+          </li>
+          <li>
+            To do this, I had to create an escape function. This takes the content from the form, creates a new div and makes said content a child of the div.
+          </li>
+        </ul>
+      </div>
+      <img
+        className="working--challenges--carousel--item--image"
+        src={images.tweeter_protectAgainstXSS}
       />
     </div>,
   ],
@@ -104,15 +122,13 @@ const tweeter = {
       <h3>What I Learnt</h3>
       <ul>
         <li>
-          I had gotten an introduction to HTTP requests and Web Servers before,
-          and now I had to use them here. This was my first time manually
-          setting up an Express server, using authentication, using cookies.
+          This was my first time using Sass, and I would go on to use it in future projects. This project was our introduction to AJAX requests and creating Single-Page Applications.
         </li>
         <li>
-          When the user types in a password, it should be compared to the
-          existing password in the database. It should not be compared to
-          itself. Yes, this is plainly obvious, and hopefully I won't make this
-          mistake again.
+          While I had used jQuery before, this project allowed me to stretch those muscles further. It was also during this project that I understood what the "$" in jQuery did.
+        </li>
+        <li>
+          I was also inroduced to IIFE's and XSS attacks. While they were helpful to learn, I haven't had to use escape functions in my later React projects. I still make sure to keep them in mind.
         </li>
       </ul>
     </>

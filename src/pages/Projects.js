@@ -83,7 +83,7 @@ const Projects = () => {
     return (
       <div className="working--challenges">
         <Carousel
-          variant="dark"
+          variant="light"
           prevLabel="Previous"
           nextLabel="Next"
           prevIcon={<span className="carousel-control-prev-icon" />}
