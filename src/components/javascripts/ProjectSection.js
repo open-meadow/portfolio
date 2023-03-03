@@ -20,8 +20,6 @@ const ProjectSection = () => {
     setActiveIndex(selectedIndex);
   };
 
-  const createCarouselImages = () => {};
-
   return (
     <div className="projects">
       <div id="image">
@@ -48,6 +46,7 @@ const ProjectSection = () => {
           <Carousel.Item>
             <img src={portfolio[5].images[0]} className="project-img" />
           </Carousel.Item>
+
         </Carousel>
       </div>
       <div id="details">

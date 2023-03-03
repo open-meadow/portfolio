@@ -1,5 +1,5 @@
 .projects {
-  background-color: rgba(106, 212, 135, 0.3);
+  background-color: rgba(249, 249, 249, 0.7);
   text-shadow: none;
   color: black;
   padding: 2em;
@@ -22,5 +22,6 @@
   .project-img {
     max-width: 960px;
     max-height: 720px;
+    aspect-ratio: 16 / 9;
   }
 }
