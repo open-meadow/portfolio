@@ -1,6 +1,5 @@
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import { AppProvider } from "./contexts/context";
 import "./components/styles/App.scss";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
