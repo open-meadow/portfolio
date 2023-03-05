@@ -76,10 +76,12 @@ const ProjectSection = () => {
           <Link to={`/project/${activeIndex}`}>
             <Button size="lg">Info</Button>
           </Link>
-          <Button className="github-link--separate" variant="dark" size="lg">
-            <BsGithub />
-            <span id="remove-underline">Github</span>
-          </Button>
+          <Link to={portfolio[activeIndex].githubLink}>
+            <Button className="github-link--separate" variant="dark" size="lg">
+              <BsGithub />
+              <span id="remove-underline">Github</span>
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
