@@ -56,6 +56,7 @@ const scheduler = {
       <img
         className="working--challenges--carousel--item--image"
         src={images.scheduler_displayingAppointments}
+        alt="project"
       />
     </div>,
     <div className="working--challenges--carousel--item">
@@ -77,6 +78,7 @@ const scheduler = {
       <img
         className="working--challenges--carousel--item--image"
         src={images.scheduler_addingNewAppointments}
+        alt="project"
       />
     </div>,
   ],

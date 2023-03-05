@@ -83,6 +83,7 @@ const yourTube = {
       <img
         className="working--challenges--carousel--item--image"
         src={images.tinyapp_loginPage}
+        alt="project"
       />
     </div>,
     <div className="working--challenges--carousel--item">
@@ -115,6 +116,7 @@ const yourTube = {
       <img
         className="working--challenges--carousel--item--image"
         src={images.tinyapp_singleUrlPage}
+        alt="project"
       />
     </div>,
   ],

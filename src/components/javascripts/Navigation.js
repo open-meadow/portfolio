@@ -26,7 +26,7 @@ const Navigation = () => {
   const generateDropdowns = () => {
     const dropdownList = Object.keys(portfolio).map((key) => {
       return (
-        <NavDropdown.Item href={`/project/${key}`}>
+        <NavDropdown.Item href={`/project/${key}`} key={portfolio[key].name}>
           {portfolio[key].name}
         </NavDropdown.Item>
       );

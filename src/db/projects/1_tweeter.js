@@ -67,6 +67,7 @@ const tweeter = {
       <img
         className="working--challenges--carousel--item--image"
         src={images.tweeter_errorIfTextIsTooLong}
+        alt="project"
       />
     </div>,
     <div className="working--challenges--carousel--item">
@@ -95,6 +96,7 @@ const tweeter = {
       <img
         className="working--challenges--carousel--item--image"
         src={images.tweeter_characterCounter}
+        alt="project"
       />
     </div>,
     <div className="working--challenges--carousel--item">
@@ -114,6 +116,7 @@ const tweeter = {
       <img
         className="working--challenges--carousel--item--image"
         src={images.tweeter_protectAgainstXSS}
+        alt="project"
       />
     </div>,
   ],
