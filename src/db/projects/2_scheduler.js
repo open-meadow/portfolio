@@ -12,7 +12,7 @@ const scheduler = {
       devices. It is a responsive app that shows a different layout for computer
       and mobile devices. It makes use of AJAX requests so that the data gets
       immediately updated. The webpage was created using Node and React and
-      tested with Jest and Cypress.
+      tested with Storybook, Jest and Cypress.
     </div>
   ),
   features: (
@@ -21,28 +21,19 @@ const scheduler = {
         <h3>The website includes the following features:</h3>
         <ul id="small-margin">
           <li>
-            Upon inputting a long URL in the given form, the website generates a
-            short URL. This can be used to navigate to the long URL
+            A user can select a day to add an appointment. Once selected, the user can create a new appointment by typing in a name, selecting an interviewer and clicking 'submit'. The appointment will be shown for said day.
           </li>
           <li>
-            The Dashboard allows users to view a list of shortened URL's under
-            their account and quickly navigate to them, edit them or delete the
-            URL's.
+            A user can edit and delete existing appointments.
           </li>
           <li>
-            An Edit screen allows users to quickly edit a URL under said ID
+            All appointments are stored on a shared database, and the app makes use of WebSockets. Due to this, a user logging in on one device can see and edit appointments from other users. (This is done for practice purposes).
           </li>
           <li>
-            The screen keeps track of the number of times a URL is visited and
-            displays it to the user
+            The app has been deployed and can be accessed from here (https://scheduler-rv.netlify.app/). It may not always be deployed, but I shall do my best to keep it up. Please let me know if you are unable to access it.
           </li>
           <li>
-            Login and Registration capabilities allowing users to only view
-            their URL's
-          </li>
-          <li>
-            Login details are stored in cookies and are not lost upon browser
-            shutdown
+            Alternate view for mobile devices.
           </li>
         </ul>
       </div>
@@ -51,63 +42,41 @@ const scheduler = {
   challenges: [
     <div className="working--challenges--carousel--item">
       <div>
-        <h3>User Authentication</h3>
+        <h3>Deployment</h3>
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            Upon filling the form and clicking "submit", the app checks if the
-            user exists in the database. As I hadn't yet learnt SQL, I was
-            storing the details in a JavaScript object.
+            This was my first time deploying a web app, and I found it to be quite difficult. I used Railway to deploy the server and database, CircleCI for Continuous Integration, and Netlify for the client.
           </li>
           <li>
-            If the user did not already exist, the app would create a new user.
-            It was then hash the given password using the bcrypt module from
-            npm.
-          </li>
-          <li>
-            During login, I had initially made an error. When logging in,
-            instead of checking if the supplied password matched the one in the
-            database, I had checked if the supplied password was equal to
-            itself. It was quite funny once it was pointed out to me, and I have
-            since fixed the mistake.
+            CircleCI was the most difficult aspect for me to understand. It took me awhile to understand what Continuous Integration was and to understand the CircleCI interface.
           </li>
         </ul>
       </div>
       <img
         className="working--challenges--carousel--item--image"
-        src={images.tinyapp_loginPage}
+        src={images.scheduler_displayingAppointments}
       />
     </div>,
     <div className="working--challenges--carousel--item">
       <div>
-        <h3>Analytics</h3>
+        <h3>Web Sockets</h3>
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            This was really tricky to implement. I actually spent a lot of time
-            trying to figure something out for this, and I had to get help from
-            a teacher.
+            The web sockets were a later addition. I hadn't fully understood how they worked, and they were initially causing a lot of problems.
           </li>
           <li>
-            I was trying to save the number of times a user views a page. For a
-            long time, I was using the cookie-session module from npm to store
-            the value in a cookie. This led to a long and complicated series of
-            steps where the page would crash if I hadn't passed the value
-            correctly to the page. Not to mention, there would be times when the
-            value would start incrementing from zero instead of one
+            When I initially started the web sockets, it would lead to the dreaded white screen whenever I made a change (such as adding a new appointment). As it turns out, each major change was restarting the web socket all over again.
           </li>
           <li>
-            As a compromise, I ended up storing the value of timesViewed in the
-            database (a JS object), and I would directly call the value from the
-            database. It's a somewhat hacky solution. It wouldn't work at a
-            large scale, but for the purposes of the exercise, it got the job
-            done.
+            What I found was, I had to start the Web Socket inside a useRef hook. This would make it so that the state of the socket would persist between re-renders.
           </li>
         </ul>
       </div>
       <img
         className="working--challenges--carousel--item--image"
-        src={images.tinyapp_singleUrlPage}
+        src={images.scheduler_addingNewAppointments}
       />
     </div>,
   ],
@@ -116,15 +85,10 @@ const scheduler = {
       <h3>What I Learnt</h3>
       <ul>
         <li>
-          I had gotten an introduction to HTTP requests and Web Servers before,
-          and now I had to use them here. This was my first time manually
-          setting up an Express server, using authentication, using cookies.
+          This was my first time deploying a website. It was a long and tough road, but it was the first time I could tell my friends and family to just go to a URL and see what I had made. It was really nice.
         </li>
         <li>
-          When the user types in a password, it should be compared to the
-          existing password in the database. It should not be compared to
-          itself. Yes, this is plainly obvious, and hopefully I won't make this
-          mistake again.
+          This was my first proper webpage created using React. I greatly enjoyed the experience, and I have continued using it since.
         </li>
       </ul>
     </>

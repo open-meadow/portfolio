@@ -137,6 +137,10 @@ const tweeter = {
     images.tweeter_mainPageDesktop,
     images.tweeter_mainPageMobile,
     images.tweeter_scrollToTopButton,
+    images.tweeter_characterCounter,
+    images.tweeter_createTweetMobile,
+    images.tweeter_errorIfTextIsTooLong,
+    images.tweeter_protectAgainstXSS,
   ],
   githubLink: "https://github.com/open-meadow/tweeter",
 };
