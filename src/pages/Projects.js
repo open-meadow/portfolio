@@ -33,48 +33,6 @@ const Projects = () => {
     return <div className="tools">{toolButtons}</div>;
   };
 
-  // text for how it works section
-  const how_it_works = () => {
-    const image = currentPortfolio.images[0];
-
-    return (
-      <div className="working--border">
-        <div className="working--border--details">
-          <h1 id="work">How it works</h1>
-          <hr className="line--second" />
-          <div id="text">{currentPortfolio.how_it_works}</div>
-        </div>
-        <img
-          className="working--border--details--image"
-          src={image}
-          width={960}
-          height={640}
-        />
-      </div>
-    );
-  };
-
-  // text for programming notes
-  const programming_notes = () => {
-    const image = currentPortfolio.images[0];
-
-    return (
-      <div className="working--border">
-        <img
-          className="working--border--details--image"
-          src={image}
-          width={960}
-          height={640}
-        />
-        <div className="working--border--details">
-          <h1 id="work">Programming Notes</h1>
-          <hr className="line--second" />
-          <div id="text">{currentPortfolio.programming_notes}</div>
-        </div>
-      </div>
-    );
-  };
-
   const challenges = () => {
     const challengesDiv = currentPortfolio.challenges.map((challenge) => {
       return <Carousel.Item>{challenge}</Carousel.Item>;
@@ -112,7 +70,7 @@ const Projects = () => {
               {currentPortfolio.features}
               <ImageCarousel currentPortfolio={currentPortfolio} />
             </div>
-            <hr/>
+            <hr />
             <h2>Challenges</h2>
             {challenges()}
             <hr />

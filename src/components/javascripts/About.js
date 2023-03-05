@@ -47,7 +47,7 @@ const About = () => {
           cras sed felis. Interdum consectetur libero id faucibus nisl
           tincidunt.
         </p>
-        <img src="https://via.placeholder.com/640x480" />
+        <img src="https://via.placeholder.com/640x480" alt="placeholder" />
       </div>
     </div>
   );
