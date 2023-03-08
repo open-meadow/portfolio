@@ -25,8 +25,7 @@ const fpo = {
         <h3>The website includes the following features:</h3>
         <ul id="small-margin">
           <li>
-            Upon inputting a long URL in the given form, the website generates a
-            short URL. This can be used to navigate to the long URL
+            The website consists of two pages. A client page where a user can place orders, and a restaurant page where a restaurant can change the status of an order.
           </li>
           <li>
             The Dashboard allows users to view a list of shortened URL's under
