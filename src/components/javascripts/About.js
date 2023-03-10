@@ -1,16 +1,10 @@
 import { useState } from "react";
 import "../styles/About.scss";
+import alphabetLetters from "../../images/default/alphabet-letters-from-magazine.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
 
   return (
     <div id="About" className="about">
@@ -32,24 +26,18 @@ const About = () => {
             <h4 className="question">How did I make these?</h4>
           </li>
           <h5>
-            I typed {" "}
+            I typed{" "}
             <span
-            id="alphabet"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              id="alphabet"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
             >
               these symbols
             </span>
             {isHovering && (
-              <img
-                src={
-                  "https://www.publicdomainpictures.net/pictures/40000/velka/alphabet-letters-from-magazine.jpg"
-                }
-                id="alphabet--img"
-                alt="My Image"
-              />
-            )}
-            {" "} into Notepad in such a way that made these bottom things happy
+              <img src={alphabetLetters} id="alphabet--img" alt="My Image" />
+            )}{" "}
+            into Notepad in such a way that made these bottom things happy
           </h5>
           <ul>
             <li>LANGUAGES: JavaScript, Ruby, HTML, CSS, Python, Java, C++</li>
@@ -63,6 +51,23 @@ const About = () => {
           </ul>
           <li>
             <h4 className="question">Where can I find myself?</h4>
+          </li>
+          <li>
+            <p className="answer">Online, you can find me in these places:</p>
+            <ul>
+              <li>
+                GitHub:{" "}
+                <Link to={"https://github.com/open-meadow"}>
+                  https://github.com/open-meadow
+                </Link>
+              </li>
+              <li>
+                LinkedIn:{" "}
+                <Link to={"https://www.linkedin.com/in/rohanvarughese/"}>
+                https://www.linkedin.com/in/rohanvarughese/
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
         <img src="https://via.placeholder.com/640x480" alt="placeholder" />
