@@ -97,21 +97,41 @@ const fpo = {
         alt="project"
       />
     </div>,
+        <div className="working--challenges--carousel--item">
+        <div>
+          <h3>Cart</h3>
+          <hr className="working--challenges--carousel--item--line" />
+          <ul className="working--challenges--carousel--item--text">
+            <li>
+              I didn't work on this. My teammates did. It was quite challenging, and I'd like to write a few sentences on how they did it in case I need to take credit for their hard work.
+            </li>
+            <li>
+              The details about the cart are stored in the browser's local storage. The local storage holds an object which contains the menu ID, order name and quantity. Once this object is created, there are separate functions that use the menu ID to increase and decrease the quantity.
+            </li>
+            <li>
+              A separate function uses information from the local storage to calculate the price. Upon clicking submit, All the info is stored in the database (to be used by the restaurant), and the local storage is cleared. 
+            </li>
+          </ul>
+        </div>
+        <img
+          className="working--challenges--carousel--item--image"
+          src={images.fpo_ordersMain}
+          alt="project"
+        />
+      </div>,
   ],
   lessons_learnt: (
     <>
       <h3>What I Learnt</h3>
       <ul>
         <li>
-          I had gotten an introduction to HTTP requests and Web Servers before,
-          and now I had to use them here. This was my first time manually
-          setting up an Express server, using authentication, using cookies.
+          This was my first experience collaborating on a coding project with a team. We were able to equally divide the tasks among ourselves, and we all put in our best effort.
         </li>
         <li>
-          When the user types in a password, it should be compared to the
-          existing password in the database. It should not be compared to
-          itself. Yes, this is plainly obvious, and hopefully I won't make this
-          mistake again.
+          Trello is a very useful tool. One of my teammates was a project manager, and because of him, we created a Trello board very early on. This helped keep us accountable and on-track for the rest of our project. I've been using it since.
+        </li>
+        <li>
+          Don't add a login feature unless it's absolutely required. We had plans for a login feature that were later scrapped when it was clear that it would take too long and we wouldn't be able to finish it in time (I was working on it 😢).  
         </li>
       </ul>
     </>
