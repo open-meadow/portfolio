@@ -7,10 +7,16 @@
   #main {
     display: flex;
 
-    #text {
-      margin: 1em;
+    #alphabet {
+      text-decoration: underline;
+
+      &--img {
+        max-width: 200px;
+        position: absolute;
+        z-index: +2;
+        border: 1px solid black;
+        border-radius: 1em;
+      }
     }
-
   }
-
 }
