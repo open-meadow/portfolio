@@ -139,15 +139,7 @@ const yourTube = {
       <h3>What I Learnt</h3>
       <ul>
         <li>
-          I had gotten an introduction to HTTP requests and Web Servers before,
-          and now I had to use them here. This was my first time manually
-          setting up an Express server, using authentication, using cookies.
-        </li>
-        <li>
-          When the user types in a password, it should be compared to the
-          existing password in the database. It should not be compared to
-          itself. Yes, this is plainly obvious, and hopefully I won't make this
-          mistake again.
+          We had to work with several APIs and libraries. YouTube, Invidious, video-js, ytdl, ffmpeg, Axios. Working on this project has made me a lot more comfortable working with external API's and libraries,
         </li>
       </ul>
     </>
