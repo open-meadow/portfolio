@@ -28,24 +28,22 @@ const fpo = {
             The website consists of two pages. A client page where a user can place orders, and a restaurant page where a restaurant can change the status of an order.
           </li>
           <li>
-            The Dashboard allows users to view a list of shortened URL's under
-            their account and quickly navigate to them, edit them or delete the
-            URL's.
+            The client page shows several menu items. A user can click the [+] or [-] buttons to add and remove the menu items to and from the cart.
           </li>
           <li>
-            An Edit screen allows users to quickly edit a URL under said ID
+            The cart updates with order information, and calculates the necessary fees and taxes. A user can submit this order.
           </li>
           <li>
-            The screen keeps track of the number of times a URL is visited and
-            displays it to the user
+            Once submitted, the order appears on the restaurant page. From there, a user can input in the search bar, the amount of time (in minutes) it would take to complete the order.
           </li>
           <li>
-            Login and Registration capabilities allowing users to only view
-            their URL's
+            Once the user has input this, it starts a timer counting down from said number of minutes. This information is simultaneously shown on the client screen.
           </li>
           <li>
-            Login details are stored in cookies and are not lost upon browser
-            shutdown
+            Separate tabs that divide orders for each phase of their orders.
+          </li>
+          <li>
+            Once an order is placed, and once an order is completed, an SMS message is sent to the user.
           </li>
         </ul>
       </div>

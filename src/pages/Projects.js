@@ -88,6 +88,10 @@ const Projects = () => {
           </footer>
         </div>
       </main>
+      <hr />
+      <a href="https://www.pexels.com/photo/white-furred-animals-on-green-grass-field-710263/">
+        <p id="credit">Photo by Gabriel Peter from Pexels</p>
+      </a>
     </>
   );
 };
