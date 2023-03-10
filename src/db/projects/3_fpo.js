@@ -52,64 +52,48 @@ const fpo = {
   challenges: [
     <div className="working--challenges--carousel--item">
       <div>
-        <h3>User Authentication</h3>
+        <h3>Timer</h3>
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            Upon filling the form and clicking "submit", the app checks if the
-            user exists in the database. As I hadn't yet learnt SQL, I was
-            storing the details in a JavaScript object.
+            I was working almost entirely on the restaurant page. The most challenging part for me was to implement the timer.
           </li>
           <li>
-            If the user did not already exist, the app would create a new user.
-            It was then hash the given password using the bcrypt module from
-            npm.
+            The usual way of generating a timer is to get the current time, get (current time + number of minutes), subtract the two and continuously show the subtraction on-screen.
           </li>
           <li>
-            During login, I had initially made an error. When logging in,
-            instead of checking if the supplied password matched the one in the
-            database, I had checked if the supplied password was equal to
-            itself. It was quite funny once it was pointed out to me, and I have
-            since fixed the mistake.
+            I had to figure out how to perform mathematical functions on time values. To do this, I had to convert the obtained time from minutes to milliseconds, add the two, convert it back to minutes and show it on screen.
+          </li>
+          <li>
+            This alone was causing errors. Hence, I stored the time values in the browser's sessionStorage. This fixed the errors, and allowed the timer to persist upon refresh
           </li>
         </ul>
       </div>
       <img
         className="working--challenges--carousel--item--image"
-        src={images.tinyapp_loginPage}
+        src={images.fpo_restaurantPending}
         alt="project"
       />
     </div>,
     <div className="working--challenges--carousel--item">
       <div>
-        <h3>Analytics</h3>
+        <h3>Cart</h3>
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            This was really tricky to implement. I actually spent a lot of time
-            trying to figure something out for this, and I had to get help from
-            a teacher.
+            I didn't work on this. My teammates did. It was quite challenging, and I'd like to write a few sentences on how they did it in case I need to take credit for their hard work.
           </li>
           <li>
-            I was trying to save the number of times a user views a page. For a
-            long time, I was using the cookie-session module from npm to store
-            the value in a cookie. This led to a long and complicated series of
-            steps where the page would crash if I hadn't passed the value
-            correctly to the page. Not to mention, there would be times when the
-            value would start incrementing from zero instead of one
+            The details about the cart are stored in the browser's local storage. The local storage holds an object which contains the menu ID, order name and quantity. Once this object is created, there are separate functions that use the menu ID to increase and decrease the quantity.
           </li>
           <li>
-            As a compromise, I ended up storing the value of timesViewed in the
-            database (a JS object), and I would directly call the value from the
-            database. It's a somewhat hacky solution. It wouldn't work at a
-            large scale, but for the purposes of the exercise, it got the job
-            done.
+            A separate function uses information from the local storage to calculate the price. Upon clicking submit, All the info is stored in the database (to be used by the restaurant), and the local storage is cleared. 
           </li>
         </ul>
       </div>
       <img
         className="working--challenges--carousel--item--image"
-        src={images.tinyapp_singleUrlPage}
+        src={images.fpo_ordersMain}
         alt="project"
       />
     </div>,

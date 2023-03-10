@@ -4,12 +4,12 @@ const ImageCarousel = (props) => {
   const { currentPortfolio } = props;
 
   const carousel_images = () => {
-    const imageList = currentPortfolio.images.map((index, num) => {
+    const imageList = currentPortfolio.images.map((index) => {
       return (
         <Carousel.Item>
           <img
             className="image-carousel--image"
-            src={currentPortfolio.images[num]}
+            src={index}
             alt={currentPortfolio.name}
           />
         </Carousel.Item>
