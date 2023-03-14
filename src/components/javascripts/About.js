@@ -3,73 +3,117 @@ import "../styles/About.scss";
 import alphabetLetters from "../../images/default/alphabet-letters-from-magazine.jpg";
 import { Link } from "react-router-dom";
 
-const About = () => {
-  const [isHovering, setIsHovering] = useState(false);
+import toolIcons from "../../db/toolIcons";
 
+const About = () => {
   return (
     <div id="About" className="about">
       <h1>About Me</h1>
-      <h3>No, my name isn't actually open-meadow</h3>
-      <div id="main">
-        <ul>
-          <li>
-            <h4 className="question">Then who am I?</h4>
-          </li>
-          <li>
-            <p className="answer">
-              My name is Rohan Varughese. (It's pronounced: Ro-hun V-uhr-geese)
-              Nice to meet you! This website is a way for me to show the
-              projects I've made so far. I hope you like them.
-            </p>
-          </li>
-          <li>
-            <h4 className="question">How did I make these?</h4>
-          </li>
-          <h5>
-            I typed{" "}
-            <span
-              id="alphabet"
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
+      <div className="main">
+        <div className="main--text">
+          {" "}
+          <p>
+            Hello! My name is Rohan Varughese. (It's pronounced: Ro-hun
+            V-uhr-geese) Nice to meet you! I made this website to show the
+            projects I've made so far. I hope you like them.
+          </p>
+          <p>
+            I'm a full stack web developer living in Toronto. I've graduated
+            with a Diploma in Full Stack Web Development from Lighthouse Labs. I
+            also have a degree in Animation from OCAD University.
+          </p>
+          <p>
+            I like carousels. I like hot sauce. I like pretending to be funny. I
+            like to use these tools mentioned below.
+          </p>
+          <div className="tool">
+            <div className="tool--single">
+              {toolIcons["React"]}
+              <span className="tool--single--name">{"React"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["Node.js"]}
+              <span className="tool--single--name">{"Node JS"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["Sass"]}
+              <span className="tool--single--name">{"Sass"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["PostgreSQL"]}
+              <span className="tool--single--name">{"PostgreSQL"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["jQuery"]}
+              <span className="tool--single--name">{"jQuery"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["Ruby"]}
+              <span className="tool--single--name">{"Ruby"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["on Rails"]}
+              <span className="tool--single--name">{"Ruby on Rails"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["Python"]}
+              <span className="tool--single--name">{"Python"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["Git"]}
+              <span className="tool--single--name">{"Git"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["Java"]}
+              <span className="tool--single--name">{"Java"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["C++"]}
+              <span className="tool--single--name">{"C++"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["Cypress"]}
+              <span className="tool--single--name">{"Cypress"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["HTML"]}
+              <span className="tool--single--name">{"HTML"}</span>
+            </div>
+            <div className="tool--single">
+              {toolIcons["CSS"]}
+              <span className="tool--single--name">{"CSS"}</span>
+            </div>
+          </div>
+          <p>
+            I don't like having to update the above section, as I pick up new
+            tools because react-icons doesn't always have the correct icon. I
+            don't like being bald at age 22. I don't like how when I tell people
+            I'm age 22, they don't believe me because how can someone be so bald
+            and ugly at age 22? I don't like tomato ketchup.
+          </p>
+          <p className="answer">Online, you can find me in these places:</p>
+          <div>
+            {toolIcons["GitHub"]}{" "}
+            <Link to={"https://github.com/open-meadow"}>
+              https://github.com/open-meadow
+            </Link>
+          </div>
+          <div>
+            {toolIcons["LinkedIn"]}{" "}
+            <Link to={"https://www.linkedin.com/in/rohanvarughese/"}>
+              https://www.linkedin.com/in/rohanvarughese/
+            </Link>
+          </div>
+          <div>
+            {toolIcons["YouTube"]}{" "}
+            <Link
+              to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
             >
-              these symbols
-            </span>
-            {isHovering && (
-              <img src={alphabetLetters} id="alphabet--img" alt="My Image" />
-            )}{" "}
-            into Notepad in such a way that made these bottom things happy
-          </h5>
-          <ul>
-            <li>LANGUAGES: JavaScript, Ruby, HTML, CSS, Python, Java, C++</li>
-            <li>
-              FRAMEWORKS, LIBRARIES, AND ENVIRONMENTS: NodeJS, ReactJS, Ajax,
-              Express, EJS, jQuery, Bootstrap, ActiveRecord, React Native,
-              Rails, SASS, Linux{" "}
-            </li>
-            <li>TESTING: Storybook, Cypress, RSpec, Jest, Mocha, Chai </li>
-            <li>SYSTEMS AND DATABASES: SQL, Git</li>
-          </ul>
-          <li>
-            <h4 className="question">Where can I find myself?</h4>
-          </li>
-          <li>
-            <p className="answer">Online, you can find me in these places:</p>
-            <ul>
-              <li>
-                GitHub:{" "}
-                <Link to={"https://github.com/open-meadow"}>
-                  https://github.com/open-meadow
-                </Link>
-              </li>
-              <li>
-                LinkedIn:{" "}
-                <Link to={"https://www.linkedin.com/in/rohanvarughese/"}>
-                https://www.linkedin.com/in/rohanvarughese/
-                </Link>
-              </li>
-            </ul>
-          </li>
-        </ul>
+              https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg
+            </Link>
+          </div>
+        </div>
+
         <img src="https://via.placeholder.com/640x480" alt="placeholder" />
       </div>
     </div>
