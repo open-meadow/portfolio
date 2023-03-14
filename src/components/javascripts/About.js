@@ -1,6 +1,4 @@
-import { useState } from "react";
 import "../styles/About.scss";
-import alphabetLetters from "../../images/default/alphabet-letters-from-magazine.jpg";
 import { Link } from "react-router-dom";
 
 import toolIcons from "../../db/toolIcons";
