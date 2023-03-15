@@ -20,7 +20,7 @@
     // border: 3px solid green;
     width: 90%;
     margin: 1rem;
-    
+
     &--item {
       border-radius: 3em;
       background-color: rgba(216, 216, 216, 0.6);
@@ -54,15 +54,15 @@
         justify-content: space-between;
         height: 50%;
 
-        h2 {
-          font-weight: 600;
-        }
-
         &--text {
+          &--title {
+            font-weight: 600;
+          }
+
           text-align: center;
           margin-bottom: 1rem;
-          /* Allow text to overflow */
           overflow: auto;
+          // border: 3px solid red;
 
           .has-overflow {
             box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.1);
@@ -105,9 +105,9 @@
   }
 
   .slick-dots {
-    position: absolute;
+    // position: absolute;
     // border: 3px solid purple;
-    margin: -1rem 28rem;
+    margin: -1rem 25rem;
     width: 50%;
   }
 
@@ -126,6 +126,30 @@
 
     .slick-dots {
       display: none !important;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+  .project {
+    .slick-dots {
+      position: absolute;
+      // border: 3px solid purple;
+      margin: -1rem 12rem;
+      // border: 3px solid red;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1024px) {
+  .project {
+    .slick-dots {
+      position: absolute;
+      // border: 3px solid purple;
+      margin: -1rem 15rem;
+      // border: 3px solid red;
+      width: 50%;
     }
   }
 }

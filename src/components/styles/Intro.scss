@@ -18,3 +18,12 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .intro {
+    border: 3px solid red;
+    padding: 3em 0;
+    font-size: 2em;
+    text-align: center;
+  }
+}

@@ -27,6 +27,12 @@ const ProjectSection_new = () => {
     slidesToShow: 3,
     responsive: [
       {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
@@ -48,7 +54,7 @@ const ProjectSection_new = () => {
           </div>
           <div className="project--slider--item--details">
             <div className="project--slider--item--details--text">
-              <h2>{portfolio[portfolioItem].name}</h2>
+            <h2 className="project--slider--item--details--text--title">{portfolio[portfolioItem].name}</h2>
               <p ref={textRef}>{portfolio[portfolioItem].description}</p>
             </div>
             <div className="project--slider--item--details--buttons">
