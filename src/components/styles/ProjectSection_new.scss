@@ -71,7 +71,7 @@
     background-color: black;
     width: 15%;
     height: 6%;
-    margin: 22.7rem -1rem;
+    margin: 22.7rem 10rem;
     z-index: +1;
     position: absolute;
   }
@@ -92,5 +92,13 @@
     border: 3px solid orange;
     width: auto;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project {
+    .slick-arrow {
+      display: none !important;
+    }
   }
 }

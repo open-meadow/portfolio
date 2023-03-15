@@ -1,5 +1,6 @@
 import "../styles/About.scss";
 import { Link } from "react-router-dom";
+import self_portrait from "../../images/default/self_portrait.jpg"
 
 import toolIcons from "../../db/toolIcons";
 
@@ -90,19 +91,19 @@ const About = () => {
             and ugly at age 22? I don't like tomato ketchup.
           </p>
           <p className="answer">Online, you can find me in these places:</p>
-          <div>
+          <div className="main--text--links">
             {toolIcons["GitHub"]}{" "}
             <Link to={"https://github.com/open-meadow"}>
               https://github.com/open-meadow
             </Link>
           </div>
-          <div>
+          <div className="main--text--links">
             {toolIcons["LinkedIn"]}{" "}
             <Link to={"https://www.linkedin.com/in/rohanvarughese/"}>
               https://www.linkedin.com/in/rohanvarughese/
             </Link>
           </div>
-          <div>
+          <div className="main--text--links">
             {toolIcons["YouTube"]}{" "}
             <Link
               to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
@@ -112,7 +113,7 @@ const About = () => {
           </div>
         </div>
 
-        <img src="https://via.placeholder.com/640x480" alt="placeholder" />
+        <img src={self_portrait} alt="Self Portrait" className="main--image" />
       </div>
     </div>
   );

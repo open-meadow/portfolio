@@ -9,3 +9,12 @@
     font-size: 0.4em;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .intro {
+    border: 3px solid red;
+    padding: 3em 0;
+    font-size: 1em;
+    text-align: center;
+  }
+}

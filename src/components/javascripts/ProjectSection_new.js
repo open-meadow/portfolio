@@ -16,6 +16,14 @@ const ProjectSection_new = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const carouselItems = () => {

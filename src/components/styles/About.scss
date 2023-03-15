@@ -9,6 +9,7 @@
 
     &--text {
       margin: 0em 5em;
+      overflow: hidden;
 
       .tool {
         display: flex;
@@ -25,6 +26,40 @@
             margin: 0em 0.5em;
           }
         }
+      }
+
+      &--links {
+        font-size: 1em;
+      }
+    }
+
+    &--image {
+      max-width: 640px;
+      max-height: 480px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    overflow: hidden;
+
+    .main {
+      border: 3px solid red;
+      width: 115%;
+      flex-direction: column;
+
+      &--text {
+        margin: 0;
+
+        &--links {
+          font-size: 0.6em;
+        }
+      }
+
+      &--image {
+        max-width: 480px;
+        max-height: 320px;
       }
     }
   }
