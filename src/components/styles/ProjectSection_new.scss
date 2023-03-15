@@ -1,0 +1,42 @@
+.project {
+  border: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 40rem;
+
+  &--slider {
+    border: 3px solid green;
+    width: 90%;
+    margin: 1rem;
+
+    &--item {
+      border: 3px solid violet;
+      margin: 1rem;
+      max-width: 90%;
+    }
+  }
+
+  .slick-arrow {
+    border: 3px solid red;
+    background-color: black;
+    width: 5%;
+    height: 100%;
+    margin: 0 -1rem;
+    z-index: +3;
+  }
+
+  .slick-dots {
+    border: 3px solid purple;
+    margin: -1rem;
+  }
+
+  .slick-slide {
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+    border: 3px solid orange;
+    width: auto;
+    overflow: hidden;
+  }
+}
