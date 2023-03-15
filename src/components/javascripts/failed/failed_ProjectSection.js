@@ -250,3 +250,54 @@ const ProjectSection = () => {
 };
 
 export default ProjectSection;
+
+// DRAFT 2!!!!!!!!!!!!!!!
+
+// .projects {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 1em;
+
+//   &--item {
+//     background-color: #ccc;
+//     padding: 1em;
+//     // border: 3px solid red;
+//     margin: 1em;
+//     opacity: 0.5;
+//     transition: opacity 0.5s ease-in-out;
+
+//     &--img {
+//       max-width: 720px;
+//       max-height: 405px;
+//       padding-bottom: 1em;
+//       padding-right: 7em;
+//     }
+
+//     &--item--details {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       transition: 1s ease-in-out;
+//       height: 100%;
+//     }
+
+//     &--item--details--buttons {
+//       display: flex;
+//       justify-content: space-evenly;
+//       width: 60%;
+//     }
+//   }
+
+//   .project--item.slick-center {
+//     opacity: 1;
+//   }
+
+//   .slick-prev,
+//   .slick-next {
+//     border: 3px solid red;
+//     color: black;
+//     width: auto;
+//     height: 10%;
+//     z-index: +3;
+//   }
+// }

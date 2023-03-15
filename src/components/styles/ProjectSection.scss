@@ -1,101 +1,65 @@
 // Draft-1!!!!!!!!!!!!!!!
+.top {
+  text-align: center;
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+}
+
 .projects {
   background-color: rgba(249, 249, 249, 0.7);
-  text-shadow: none;
   color: black;
-  padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 5em;
-  width: 50%;
+  width: 60em;
+  height: 50em;
+  border: 3px solid red;
 
-  #image {
-    margin: 1em;
+  &--image {
+    // margin: 1em;
+    border: 3px solid green;
+    margin-bottom: 10em;
+    // width: 100%;
+
+    &--img {
+      // width: 720px;
+      // height: 405px;
+      width: 90%;
+      height: 50%;
+    }
   }
 
-  &--item {
-    background-color: rgba(249, 249, 249, 0.7);
-  }
-
-  .details {
+  &--details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 1s ease-in-out;
-
-    &--info {
-      height: 100%;
-    }
+    border: 3px solid blue;
 
     &--buttons {
       display: flex;
       justify-content: space-evenly;
-      width: 60%;
+      width: 40%;
     }
-  }
-
-  .project-img {
-    max-width: 720px;
-    max-height: 405px;
-  }
-
-  .slick-prev, .slick-next {
-    border: 3px solid red;
-    color: black;
-    width: auto;
-    height: 10%;
-    z-index: +3;
   }
 }
 
-// DRAFT 2!!!!!!!!!!!!!!!
+.carousel-control-prev,
+.carousel-control-next {
+  border: 3px solid violet;
+  color: white;
+  background-color: black;
+  height: 3em;
+  top: 35em;
+}
 
-// .projects {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0 1em;
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: white;
+}
 
-//   &--item {
-//     background-color: #ccc;
-//     padding: 1em;
-//     // border: 3px solid red;
-//     margin: 1em;
-//     opacity: 0.5;
-//     transition: opacity 0.5s ease-in-out;
-
-//     &--img {
-//       max-width: 720px;
-//       max-height: 405px;
-//       padding-bottom: 1em;
-//       padding-right: 7em;
-//     }
-
-//     &--item--details {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       transition: 1s ease-in-out;
-//       height: 100%;
-//     }
-
-//     &--item--details--buttons {
-//       display: flex;
-//       justify-content: space-evenly;
-//       width: 60%;
-//     }
-//   }
-
-//   .project--item.slick-center {
-//     opacity: 1;
-//   }
-
-//   .slick-prev,
-//   .slick-next {
-//     border: 3px solid red;
-//     color: black;
-//     width: auto;
-//     height: 10%;
-//     z-index: +3;
-//   }
-// }
+.carousel-indicators {
+  border: 3px solid aquamarine;
+}

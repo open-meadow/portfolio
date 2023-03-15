@@ -138,13 +138,13 @@ const fpo = {
   ),
   images: [
     images.fpo_ordersMain,
+    images.fpo_restaurantPending,
+    images.fpo_restaurantView,
     images.fpo_inputDetails,
     images.fpo_mobileSidebar,
     images.fpo_mobileView,
     images.fpo_restaurantComplete,
-    images.fpo_restaurantPending,
     images.fpo_restaurantTimeUp,
-    images.fpo_restaurantView,
   ],
   githubLink: "https://github.com/open-meadow/food-pickup-ordering",
 };

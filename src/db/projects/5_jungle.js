@@ -65,15 +65,15 @@ const jungle = {
     </>
   ),
   images: [
+    images.jungle_soldOutBadge,
     images.jungle_adminAuthentication,
+    images.jungle_showCurrentSale,
     images.jungle_adminCategories,
     images.jungle_adminDashboard,
     images.jungle_createNewSale,
     images.jungle_email,
     images.jungle_reviews,
     images.jungle_salesDashboard,
-    images.jungle_showCurrentSale,
-    images.jungle_soldOutBadge,
   ],
   githubLink: "https://github.com/open-meadow/jungle",
 };
