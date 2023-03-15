@@ -4,6 +4,7 @@ import portfolio from "../../db/project_database";
 
 import { Button, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useRef, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +12,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { BsGithub, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const ProjectSection_new = () => {
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    if (textRef.current.scrollWidth > textRef.current.clientWidth) {
+      textRef.current.classList.add("has-overflow");
+    }
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -40,7 +49,7 @@ const ProjectSection_new = () => {
           <div className="project--slider--item--details">
             <div className="project--slider--item--details--text">
               <h2>{portfolio[portfolioItem].name}</h2>
-              <p>{portfolio[portfolioItem].description}</p>
+              <p ref={textRef}>{portfolio[portfolioItem].description}</p>
             </div>
             <div className="project--slider--item--details--buttons">
               <Link to={`/project/${portfolioItem}`}>

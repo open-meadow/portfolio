@@ -1,5 +1,10 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 .project {
-  border: 3px solid blue;
+  // border: 3px solid blue;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,23 +12,29 @@
   height: 50rem;
   overflow: hidden;
 
+  h2 {
+    font-weight: 600;
+  }
+
   &--slider {
-    border: 3px solid green;
+    // border: 3px solid green;
     width: 90%;
     margin: 1rem;
-
+    
     &--item {
-      border: 3px solid violet;
+      border-radius: 3em;
+      background-color: rgba(216, 216, 216, 0.6);
+      // border: 3px solid violet;
       margin: 1rem;
       max-width: 90%;
       height: 40rem;
-      overflow: scroll;
       padding: 1rem;
 
       &--image-section {
-        border: 3px solid red;
-        overflow: scroll;
+        // border: 3px solid red;
+        overflow: hidden;
         height: 18rem;
+        border-radius: 2em;
 
         &--image {
           // max-width: 720px;
@@ -34,7 +45,8 @@
       }
 
       &--details {
-        border: 3px solid green;
+        // border: 3px solid green;
+        margin: 1rem 0;
         position: relative;
         overflow: scroll;
         display: flex;
@@ -42,11 +54,19 @@
         justify-content: space-between;
         height: 50%;
 
+        h2 {
+          font-weight: 600;
+        }
+
         &--text {
           text-align: center;
           margin-bottom: 1rem;
           /* Allow text to overflow */
           overflow: auto;
+
+          .has-overflow {
+            box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.1);
+          }
         }
 
         &--buttons {
@@ -55,8 +75,6 @@
           justify-items: center;
           align-items: center;
           margin: 1rem;
-          margin-top: 4rem;
-          // position: absolute;
           bottom: 0;
           left: 0;
           right: 0;
@@ -67,8 +85,9 @@
   }
 
   .slick-arrow {
-    border: 3px solid red;
-    background-color: black;
+    // border: 3px solid red;
+    background-color: rgb(165, 165, 165);
+    border-radius: 5rem;
     width: 15%;
     height: 6%;
     margin: 22.7rem 10rem;
@@ -76,20 +95,24 @@
     position: absolute;
   }
 
+  .slick-arrow:hover {
+    background-color: rgb(126, 126, 126);
+  }
+
   .slick-prev {
     margin-right: 1rem;
-    border: 3px solid springgreen;
+    // border: 3px solid springgreen;
   }
 
   .slick-dots {
     position: absolute;
-    border: 3px solid purple;
-    margin: -1rem 30rem;
+    // border: 3px solid purple;
+    margin: -1rem 28rem;
     width: 50%;
   }
 
   .slick-slide {
-    border: 3px solid orange;
+    // border: 3px solid orange;
     width: auto;
     overflow: hidden;
   }
@@ -98,6 +121,10 @@
 @media screen and (max-width: 480px) {
   .project {
     .slick-arrow {
+      display: none !important;
+    }
+
+    .slick-dots {
       display: none !important;
     }
   }
