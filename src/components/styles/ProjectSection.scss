@@ -4,8 +4,9 @@
   color: black;
   padding: 2em;
   display: flex;
+  flex-direction: column;
   border-radius: 5em;
-  width: 95%;
+  width: 50%;
   margin-left: 3em;
 
   #image {
@@ -30,7 +31,15 @@
   }
 
   .project-img {
-    width: 720px;
-    height: 405px;
+    max-width: 720px;
+    max-height: 405px;
+  }
+
+  .slick-prev, .slick-next {
+    border: 3px solid red;
+    color: black;
+    width: auto;
+    height: 10%;
+    z-index: +3;
   }
 }
