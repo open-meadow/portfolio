@@ -17,11 +17,50 @@ const ProjectSection_new = () => {
     speed: 500,
     slidesToShow: 3,
   };
+
+  const carouselItems = () => {
+    const items = Object.keys(portfolio).map((portfolioItem) => {
+      return (
+        <div className="project--slider--item">
+          <div className="project--slider--item--image-section">
+            <img
+              src={portfolio[portfolioItem].images[0]}
+              className="project--slider--item--image-section--image"
+              alt={portfolio[portfolioItem].name}
+            />
+          </div>
+          <div className="project--slider--item--details">
+            <div className="project--slider--item--details--text">
+              <h2>{portfolio[portfolioItem].name}</h2>
+              <p>{portfolio[portfolioItem].description}</p>
+            </div>
+            <div className="project--slider--item--details--buttons">
+              <Link to={`/project/${portfolioItem}`}>
+                <Button size="lg">Info</Button>
+              </Link>
+              <Button
+                className="github-link--separate"
+                variant="dark"
+                size="lg"
+                href={portfolio[portfolioItem].githubLink}
+              >
+                <BsGithub />
+                <span id="remove-underline">Github</span>
+              </Button>
+            </div>
+          </div>
+        </div>
+      );
+    });
+
+    return items;
+  };
+
   return (
     <div className="project">
       <h2>Projects</h2>
       <Slider {...settings} className="project--slider">
-        <div className="project--slider--item">
+        {/* <div className="project--slider--item">
           <div className="project--slider--item--image-section">
             <img
               src={portfolio[0].images[0]}
@@ -49,8 +88,8 @@ const ProjectSection_new = () => {
               </Button>
             </div>
           </div>
-        </div>
-        <div className="project--slider--item">
+        </div> */}
+        {/* <div className="project--slider--item">
           <h3>2</h3>
         </div>
         <div className="project--slider--item">
@@ -64,7 +103,8 @@ const ProjectSection_new = () => {
         </div>
         <div className="project--slider--item">
           <h3>6</h3>
-        </div>
+        </div> */}
+        {carouselItems()}
       </Slider>
     </div>
   );
