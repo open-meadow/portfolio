@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 40rem;
+  height: 50rem;
+  overflow: hidden;
 
   &--slider {
     border: 3px solid green;
@@ -15,26 +16,56 @@
       border: 3px solid violet;
       margin: 1rem;
       max-width: 90%;
+      overflow: hidden;
+
+      &--image-section {
+        border: 3px solid red;
+        overflow: hidden;
+
+        &--image {
+          // max-width: 720px;
+          // max-height: 405px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &--details {
+        border: 3px solid green;
+
+        &--buttons {
+          display: flex;
+          justify-content: center;
+          margin: 1rem;
+        }
+
+      }
     }
   }
 
-  .slick-arrow {
-    border: 3px solid red;
-    background-color: black;
-    width: 5%;
-    height: 100%;
-    margin: 0 -1rem;
-    z-index: +3;
-  }
+  // .slick-arrow {
+  //   border: 3px solid red;
+  //   background-color: black;
+  //   width: 15%;
+  //   height: 10%;
+  //   margin: 10rem -1rem;
+  //   z-index: +1;
+  //   position: absolute;
+  // }
+
+    // .slick-prev {
+    //   margin-right: 1rem;
+    //   border: 3px solid springgreen;
+    // }
 
   .slick-dots {
+    position: absolute;
     border: 3px solid purple;
-    margin: -1rem;
+    margin: -1rem 30rem;
+    width: 50%;
   }
 
   .slick-slide {
-    margin-left: 1rem;
-    margin-bottom: 0rem;
     border: 3px solid orange;
     width: auto;
     overflow: hidden;
