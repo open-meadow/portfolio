@@ -39,7 +39,7 @@ const Navigation = () => {
     <Navbar variant="dark" expand="lg" className="navbar">
       <Container>
         <div>
-          <Link to={"/"}>
+          <Link to={"/"} className="navbar--brand">
             <Navbar.Brand>open-meadow</Navbar.Brand>
           </Link>
         </div>

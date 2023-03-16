@@ -144,6 +144,14 @@ main {
     }
   }
 }
+#disclaimer-project {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0;
+  font-weight: 600;
+  color: floralwhite;
+  text-shadow: 1px 1px 2px black;
+}
 
 .github-link {
   display: flex;
@@ -173,7 +181,7 @@ main {
   .working {
     // border: 3px solid red;
     width: 100% !important;
-    
+
     &--intro {
       background-color: rgb(233, 233, 233, 0.6);
       padding: 0.5em;
@@ -193,7 +201,7 @@ main {
 
         &--item {
           width: 10%;
-          height:auto;
+          height: auto;
 
           &--image {
             display: none;

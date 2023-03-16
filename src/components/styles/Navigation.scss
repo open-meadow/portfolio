@@ -5,4 +5,14 @@
   top: 0px;
   text-shadow: none;
   z-index: 3;
+
+  &--brand {
+    text-decoration: none;
+  }
+
+  &--brand:hover {
+    text-decoration: underline;
+  }
+
+
 }

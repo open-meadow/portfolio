@@ -1,10 +1,10 @@
 import "../styles/About.scss";
 import { Link } from "react-router-dom";
-import self_portrait from "../../images/default/self_portrait.jpg";
+import fix_my_face from "../../images/default/fix_my_face.png";
+import add_text from "../../images/default/add_text.png";
 
 import toolIcons from "../../db/toolIcons";
 import { Button } from "react-bootstrap";
-import { BsGithub } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -96,10 +96,7 @@ const About = () => {
           <div id="pers-buttons">
             <div className="main--text--links">
               <Link to={"https://github.com/open-meadow"} target="_blank">
-                <Button
-                  variant="outline-dark"
-                  size="lg"
-                >
+                <Button variant="outline-dark" size="lg">
                   {toolIcons["GitHub"]}
                   <span id="remove-underline">Github</span>
                 </Button>
@@ -110,10 +107,7 @@ const About = () => {
                 to={"https://www.linkedin.com/in/rohanvarughese/"}
                 target="_blank"
               >
-                <Button
-                  variant="outline-dark"
-                  size="lg"
-                >
+                <Button variant="outline-dark" size="lg">
                   {toolIcons["LinkedIn"]}
                   <span id="remove-underline">LinkedIn</span>
                 </Button>
@@ -124,10 +118,7 @@ const About = () => {
                 to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
                 target="_blank"
               >
-                <Button
-                  variant="outline-dark"
-                  size="lg"
-                >
+                <Button variant="outline-dark" size="lg">
                   {toolIcons["YouTube"]}
                   <span id="remove-underline">YouTube</span>
                 </Button>
@@ -136,7 +127,18 @@ const About = () => {
           </div>
         </div>
 
-        <img src={self_portrait} alt="Self Portrait" className="main--image" />
+        <div className="main--image-wrapper">
+          <img
+            src={fix_my_face}
+            alt="Self Portrait"
+            className="hover-image"
+          />
+          <img
+            src={add_text}
+            alt="Self Portrait"
+            className="main--image-wrapper--image"
+          />
+        </div>
       </div>
     </div>
   );

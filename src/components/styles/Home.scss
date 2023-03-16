@@ -14,10 +14,11 @@
 }
 
 
-#credit {
-  text-align: right;
+#disclaimer {
+  text-align: center;
   padding: 0.5em;
-  color: floralwhite;
+  margin: 0;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 480px) {

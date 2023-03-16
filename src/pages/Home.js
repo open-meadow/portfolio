@@ -14,6 +14,8 @@ const Home = () => {
       <h1 className="project--title">Projects</h1>
       <ProjectSection />
       <About />
+      <hr/>
+      <p id="disclaimer">This Website is best viewed on Desktop</p>
     </>
   );
 };

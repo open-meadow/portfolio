@@ -85,6 +85,8 @@ const Projects = () => {
             </Link>
           </footer>
         </div>
+        <hr />
+        <p id="disclaimer-project">This Website is best viewed on Desktop</p>
       </main>
     </>
   );
