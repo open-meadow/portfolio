@@ -192,7 +192,7 @@ main {
 
     &--challenges {
       overflow: auto;
-      border: 3px solid red;
+      // border: 3px solid red;
 
       &--carousel {
         // width: 10rem;
@@ -206,6 +206,42 @@ main {
           &--image {
             display: none;
             // width: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .working {
+    // border: 3px solid red;
+    width: 100% !important;
+
+    &--intro {
+      background-color: rgb(233, 233, 233, 0.6);
+      padding: 0.5em;
+      border-radius: 2em;
+      flex-direction: column-reverse;
+      // border: 3px solid red;
+    }
+
+    &--challenges {
+      overflow: auto;
+      // border: 3px solid red;
+
+      &--carousel {
+        // width: 10rem;
+        // height: 5rem;
+        overflow: auto;
+
+        &--item {
+          width: 10%;
+          height: auto;
+
+          &--image {
+            display: none;
+            width: 1px;
           }
         }
       }

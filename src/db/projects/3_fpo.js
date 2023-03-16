@@ -25,25 +25,35 @@ const fpo = {
         <h3>The website includes the following features:</h3>
         <ul id="small-margin">
           <li>
-            The website consists of two pages. A client page where a user can place orders, and a restaurant page where a restaurant can change the status of an order.
+            The website consists of two pages. A client page where a user can
+            place orders, and a restaurant page where a restaurant can change
+            the status of an order.
           </li>
           <li>
-            The client page shows several menu items. A user can click the [+] or [-] buttons to add and remove the menu items to and from the cart.
+            The client page shows several menu items. A user can click the [+]
+            or [-] buttons to add and remove the menu items to and from the
+            cart.
           </li>
           <li>
-            The cart updates with order information, and calculates the necessary fees and taxes. A user can submit this order.
+            The cart updates with order information, and calculates the
+            necessary fees and taxes. A user can submit this order.
           </li>
           <li>
-            Once submitted, the order appears on the restaurant page. From there, a user can input in the search bar, the amount of time (in minutes) it would take to complete the order.
+            Once submitted, the order appears on the restaurant page. From
+            there, a user can input in the search bar, the amount of time (in
+            minutes) it would take to complete the order.
           </li>
           <li>
-            Once the user has input this, it starts a timer counting down from said number of minutes. This information is simultaneously shown on the client screen.
+            Once the user has input this, it starts a timer counting down from
+            said number of minutes. This information is simultaneously shown on
+            the client screen.
           </li>
           <li>
             Separate tabs that divide orders for each phase of their orders.
           </li>
           <li>
-            Once an order is placed, and once an order is completed, an SMS message is sent to the user.
+            Once an order is placed, and once an order is completed, an SMS
+            message is sent to the user.
           </li>
         </ul>
       </div>
@@ -56,16 +66,24 @@ const fpo = {
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            I was working almost entirely on the restaurant page. The most challenging part for me was to implement the timer.
+            I was working almost entirely on the restaurant page. The most
+            challenging part for me was to implement the timer.
           </li>
           <li>
-            The usual way of generating a timer is to get the current time, get (current time + number of minutes), subtract the two and continuously show the subtraction on-screen.
+            The usual way of generating a timer is to get the current time, get
+            (current time + number of minutes), subtract the two and
+            continuously show the subtraction on-screen.
           </li>
           <li>
-            I had to figure out how to perform mathematical functions on time values. To do this, I had to convert the obtained time from minutes to milliseconds, add the two, convert it back to minutes and show it on screen.
+            I had to figure out how to perform mathematical functions on time
+            values. To do this, I had to convert the obtained time from minutes
+            to milliseconds, add the two, convert it back to minutes and show it
+            on screen.
           </li>
           <li>
-            This alone was causing errors. Hence, I stored the time values in the browser's sessionStorage. This fixed the errors, and allowed the timer to persist upon refresh
+            This alone was causing errors. Hence, I stored the time values in
+            the browser's sessionStorage. This fixed the errors, and allowed the
+            timer to persist upon refresh
           </li>
         </ul>
       </div>
@@ -81,13 +99,22 @@ const fpo = {
         <hr className="working--challenges--carousel--item--line" />
         <ul className="working--challenges--carousel--item--text">
           <li>
-            I didn't work on this. My teammates did. It was quite challenging, and I'd like to write a few sentences on how they did it in case I need to take credit for their hard work.
+            I didn't work on this. My teammates did. It was quite challenging,
+            and I'd like to write a few sentences on how they did it in case I
+            need to take credit for their hard work.
           </li>
           <li>
-            The details about the cart are stored in the browser's local storage. The local storage holds an object which contains the menu ID, order name and quantity. Once this object is created, there are separate functions that use the menu ID to increase and decrease the quantity.
+            The details about the cart are stored in the browser's local
+            storage. The local storage holds an object which contains the menu
+            ID, order name and quantity. Once this object is created, there are
+            separate functions that use the menu ID to increase and decrease the
+            quantity.
           </li>
           <li>
-            A separate function uses information from the local storage to calculate the price. Upon clicking submit, All the info is stored in the database (to be used by the restaurant), and the local storage is cleared. 
+            A separate function uses information from the local storage to
+            calculate the price. Upon clicking submit, All the info is stored in
+            the database (to be used by the restaurant), and the local storage
+            is cleared.
           </li>
         </ul>
       </div>
@@ -97,41 +124,27 @@ const fpo = {
         alt="project"
       />
     </div>,
-        <div className="working--challenges--carousel--item">
-        <div>
-          <h3>Cart</h3>
-          <hr className="working--challenges--carousel--item--line" />
-          <ul className="working--challenges--carousel--item--text">
-            <li>
-              I didn't work on this. My teammates did. It was quite challenging, and I'd like to write a few sentences on how they did it in case I need to take credit for their hard work.
-            </li>
-            <li>
-              The details about the cart are stored in the browser's local storage. The local storage holds an object which contains the menu ID, order name and quantity. Once this object is created, there are separate functions that use the menu ID to increase and decrease the quantity.
-            </li>
-            <li>
-              A separate function uses information from the local storage to calculate the price. Upon clicking submit, All the info is stored in the database (to be used by the restaurant), and the local storage is cleared. 
-            </li>
-          </ul>
-        </div>
-        <img
-          className="working--challenges--carousel--item--image"
-          src={images.fpo_ordersMain}
-          alt="project"
-        />
-      </div>,
   ],
   lessons_learnt: (
     <>
       <h3>What I Learnt</h3>
       <ul>
         <li>
-          This was my first experience collaborating on a coding project with a team. We were able to equally divide the tasks among ourselves, and we all put in our best effort.
+          This was my first experience collaborating on a coding project with a
+          team. We were able to equally divide the tasks among ourselves, and we
+          all put in our best effort.
         </li>
         <li>
-          Trello is a very useful tool. One of my teammates was a project manager, and because of him, we created a Trello board very early on. This helped keep us accountable and on-track for the rest of our project. I've been using it since.
+          Trello is a very useful tool. One of my teammates was a project
+          manager, and because of him, we created a Trello board very early on.
+          This helped keep us accountable and on-track for the rest of our
+          project. I've been using it since.
         </li>
         <li>
-          Don't add a login feature unless it's absolutely required. We had plans for a login feature that were later scrapped when it was clear that it would take too long and we wouldn't be able to finish it in time (I was working on it 😢).  
+          Don't add a login feature unless it's absolutely required. We had
+          plans for a login feature that were later scrapped when it was clear
+          that it would take too long and we wouldn't be able to finish it in
+          time (I was working on it 😢).
         </li>
       </ul>
     </>
