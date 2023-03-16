@@ -4,16 +4,20 @@
 
 .project {
   // border: 3px solid blue;
-  margin: 1rem 0;
+  background-image: url("../../images/default/open-meadow_invert.png");
+  margin: 0 0 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 50rem;
+  height: 65rem;
   overflow: hidden;
+  background-color: #b9d531;
 
-  h2 {
+  &--title {
     font-weight: 600;
+    font-size: 10em;
+    color: floralwhite;
   }
 
   &--slider {
@@ -23,7 +27,7 @@
 
     &--item {
       border-radius: 3em;
-      background-color: rgba(216, 216, 216, 0.6);
+      background-color: rgba(255, 255, 255, 0.6);
       // border: 3px solid violet;
       margin: 1rem;
       max-width: 90%;
@@ -86,7 +90,7 @@
 
   .slick-arrow {
     // border: 3px solid red;
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(185, 213, 49);
     border-radius: 5rem;
     width: 15%;
     height: 6%;
@@ -96,7 +100,7 @@
   }
 
   .slick-arrow:hover {
-    background-color: rgb(126, 126, 126);
+    background-color: rgb(167, 189, 58);
   }
 
   .slick-prev {

@@ -1,12 +1,13 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5em;
-  font-size: 3em;
+  padding: 30em;
+  background-image: url("../../images/default/open-meadow.png");
+  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
 
-  #wip {
-    font-size: 0.4em;
+  &--line {
+    background-color: #b9d531;
+    border-radius: 3px solid red;
   }
 }
 

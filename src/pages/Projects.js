@@ -79,7 +79,7 @@ const Projects = () => {
           <hr />
 
           <footer className="github-link">
-            <Link to={currentPortfolio.githubLink}>
+            <Link to={currentPortfolio.githubLink} target="_blank">
               <Button className="github-link--separate" variant="outline-light">
                 <BsGithub />
                 <span id="remove-underline">Github</span>

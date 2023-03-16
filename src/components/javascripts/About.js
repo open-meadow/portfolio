@@ -1,6 +1,6 @@
 import "../styles/About.scss";
 import { Link } from "react-router-dom";
-import self_portrait from "../../images/default/self_portrait.jpg"
+import self_portrait from "../../images/default/self_portrait.jpg";
 
 import toolIcons from "../../db/toolIcons";
 
@@ -93,13 +93,16 @@ const About = () => {
           <p className="answer">Online, you can find me in these places:</p>
           <div className="main--text--links">
             {toolIcons["GitHub"]}{" "}
-            <Link to={"https://github.com/open-meadow"}>
+            <Link to={"https://github.com/open-meadow"} target="_blank">
               https://github.com/open-meadow
             </Link>
           </div>
           <div className="main--text--links">
             {toolIcons["LinkedIn"]}{" "}
-            <Link to={"https://www.linkedin.com/in/rohanvarughese/"}>
+            <Link
+              to={"https://www.linkedin.com/in/rohanvarughese/"}
+              target="_blank"
+            >
               https://www.linkedin.com/in/rohanvarughese/
             </Link>
           </div>
@@ -107,6 +110,7 @@ const About = () => {
             {toolIcons["YouTube"]}{" "}
             <Link
               to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
+              target="_blank"
             >
               https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg
             </Link>

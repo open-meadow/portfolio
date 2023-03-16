@@ -36,7 +36,7 @@ const ProjectSection = () => {
               <p>{portfolio[portfolioItem].description}</p>
             </div>
             <div className="projects--details--buttons">
-              <Link to={`/project/${0}`}>
+              <Link to={`/project/${0}`} target="_blank">
                 <Button size="lg">Info</Button>
               </Link>
               <Button

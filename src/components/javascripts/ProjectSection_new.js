@@ -58,7 +58,7 @@ const ProjectSection_new = () => {
               <p ref={textRef}>{portfolio[portfolioItem].description}</p>
             </div>
             <div className="project--slider--item--details--buttons">
-              <Link to={`/project/${portfolioItem}`}>
+              <Link to={`/project/${portfolioItem}`} target="_blank">
                 <Button size="lg">Info</Button>
               </Link>
               <Button
@@ -81,7 +81,7 @@ const ProjectSection_new = () => {
 
   return (
     <div className="project">
-      <h2>Projects</h2>
+      <h1 className="project--title">Projects</h1>
       <Slider {...settings} className="project--slider">
         {/* <div className="project--slider--item">
           <div className="project--slider--item--image-section">

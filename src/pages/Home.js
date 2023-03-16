@@ -11,13 +11,10 @@ const Home = () => {
     <>
       <Navigation />
       <Intro />
+      <div className="line">{"   "}</div>
       {/* <ProjectSection /> */}
       <ProjectSection_new />
       <About />
-      <hr />
-      <a href="https://www.pexels.com/photo/white-furred-animals-on-green-grass-field-710263/">
-        <p id="credit">Photo by Gabriel Peter from Pexels</p>
-      </a>
     </>
   );
 };
