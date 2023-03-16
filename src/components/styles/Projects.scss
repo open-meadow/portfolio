@@ -1,12 +1,19 @@
+main {
+  background-image: url("../../images/default/open-meadow_large.png");
+  // background-attachment: scroll;
+  background-size: cover;
+  background-position: 1920px 1500px;
+}
+
 .main-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 95%;
-  margin: 1em auto;
+  margin: 0em auto;
   border-radius: 3em;
-  background-color: rgba(0, 0, 0, 0.3);
+  // background-color: rgba(0, 0, 0, 0.3);
 
   #project-title {
     margin: 0.5em 0 0 0;
@@ -79,7 +86,8 @@
     &--challenges {
       padding: 1em;
       margin: 1em;
-      border: 3px solid rgb(233, 233, 233);
+      // border: 3px solid rgb(233, 233, 233);
+      background-color: rgb(233, 233, 233, 0.6);
       border-radius: 3em;
 
       &--carousel {

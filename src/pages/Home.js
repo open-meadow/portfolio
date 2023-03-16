@@ -12,6 +12,7 @@ const Home = () => {
       <Navigation />
       <Intro />
       <div className="line">{"   "}</div>
+      <h1 className="project--title">Projects</h1>
       {/* <ProjectSection /> */}
       <ProjectSection_new />
       <About />

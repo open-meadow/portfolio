@@ -73,12 +73,10 @@ const Projects = () => {
             <hr />
             <h2>Challenges</h2>
             {challenges()}
-            <hr />
-            {currentPortfolio.lessons_learnt}
           </div>
-          <hr />
 
           <footer className="github-link">
+            <hr />
             <Link to={currentPortfolio.githubLink} target="_blank">
               <Button className="github-link--separate" variant="outline-light">
                 <BsGithub />
@@ -88,10 +86,6 @@ const Projects = () => {
           </footer>
         </div>
       </main>
-      <hr />
-      <a href="https://www.pexels.com/photo/white-furred-animals-on-green-grass-field-710263/">
-        <p id="credit">Photo by Gabriel Peter from Pexels</p>
-      </a>
     </>
   );
 };
