@@ -12,7 +12,6 @@ main {
   align-items: center;
   width: 95%;
   margin: 0em auto;
-  border-radius: 3em;
   // background-color: rgba(0, 0, 0, 0.3);
 
   #project-title {
@@ -160,6 +159,27 @@ main {
 
     #remove-underline {
       text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: 1920px 2058px;
+  }
+
+  .working {
+    // border: 3px solid red;
+    width: 100% !important;
+    
+    &--intro {
+      background-color: rgb(233, 233, 233, 0.6);
+      padding: 0.5em;
+      border-radius: 2em;
+      flex-direction: column;
+      // border: 3px solid red;
     }
   }
 }
