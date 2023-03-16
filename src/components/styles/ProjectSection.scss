@@ -131,7 +131,9 @@
     }
 
     .slick-dots {
-      display: none !important;
+      // display: none !important;
+      margin: 0 22%;
+      width: auto;
     }
   }
 }

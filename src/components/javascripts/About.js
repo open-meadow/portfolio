@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import self_portrait from "../../images/default/self_portrait.jpg";
 
 import toolIcons from "../../db/toolIcons";
+import { Button } from "react-bootstrap";
+import { BsGithub } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -91,29 +93,46 @@ const About = () => {
             and ugly at age 22? I don't like tomato ketchup.
           </p>
           <p className="answer">Online, you can find me in these places:</p>
-          <div className="main--text--links">
-            {toolIcons["GitHub"]}{" "}
-            <Link to={"https://github.com/open-meadow"} target="_blank">
-              https://github.com/open-meadow
-            </Link>
-          </div>
-          <div className="main--text--links">
-            {toolIcons["LinkedIn"]}{" "}
-            <Link
-              to={"https://www.linkedin.com/in/rohanvarughese/"}
-              target="_blank"
-            >
-              https://www.linkedin.com/in/rohanvarughese/
-            </Link>
-          </div>
-          <div className="main--text--links">
-            {toolIcons["YouTube"]}{" "}
-            <Link
-              to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
-              target="_blank"
-            >
-              https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg
-            </Link>
+          <div id="pers-buttons">
+            <div className="main--text--links">
+              <Link to={"https://github.com/open-meadow"} target="_blank">
+                <Button
+                  variant="outline-dark"
+                  size="lg"
+                >
+                  {toolIcons["GitHub"]}
+                  <span id="remove-underline">Github</span>
+                </Button>
+              </Link>
+            </div>
+            <div className="main--text--links">
+              <Link
+                to={"https://www.linkedin.com/in/rohanvarughese/"}
+                target="_blank"
+              >
+                <Button
+                  variant="outline-dark"
+                  size="lg"
+                >
+                  {toolIcons["LinkedIn"]}
+                  <span id="remove-underline">LinkedIn</span>
+                </Button>
+              </Link>
+            </div>
+            <div className="main--text--links">
+              <Link
+                to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
+                target="_blank"
+              >
+                <Button
+                  variant="outline-dark"
+                  size="lg"
+                >
+                  {toolIcons["YouTube"]}
+                  <span id="remove-underline">YouTube</span>
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
 

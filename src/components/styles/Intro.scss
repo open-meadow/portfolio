@@ -8,18 +8,12 @@
 
 @media screen and (max-width: 480px) {
   .intro {
-    border: 3px solid red;
-    padding: 3em 0;
-    font-size: 1em;
-    text-align: center;
+    padding: 8.6em;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   .intro {
-    border: 3px solid red;
-    padding: 3em 0;
-    font-size: 2em;
-    text-align: center;
+    padding: 10em;
   }
 }

@@ -2,7 +2,7 @@ main {
   background-image: url("../../images/default/open-meadow_large.png");
   // background-attachment: scroll;
   background-size: cover;
-  background-position: 1920px 1500px;
+  background-position: 100% 100%;
 }
 
 .main-section {
@@ -165,9 +165,9 @@ main {
 
 @media screen and (max-width: 480px) {
   main {
-    // background-size: cover;
+    background-size: cover;
     // background-repeat: no-repeat;
-    background-position: 1920px 2058px;
+    background-position: 100%;
   }
 
   .working {
@@ -178,8 +178,29 @@ main {
       background-color: rgb(233, 233, 233, 0.6);
       padding: 0.5em;
       border-radius: 2em;
-      flex-direction: column;
+      flex-direction: column-reverse;
       // border: 3px solid red;
+    }
+
+    &--challenges {
+      overflow: auto;
+      border: 3px solid red;
+
+      &--carousel {
+        // width: 10rem;
+        // height: 5rem;
+        overflow: auto;
+
+        &--item {
+          width: 10%;
+          height:auto;
+
+          &--image {
+            display: none;
+            // width: 1px;
+          }
+        }
+      }
     }
   }
 }

@@ -30,6 +30,13 @@
 
       &--links {
         font-size: 1em;
+        margin-right: 1rem;
+
+        #remove-underline {
+          text-decoration: none;
+          margin-left: 1rem;
+        }
+
       }
     }
 
@@ -41,12 +48,16 @@
       border-radius: 30em;
     }
   }
+
+  #pers-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .about {
     overflow: hidden;
-    border: 3px solid red;
 
     .main {
       width: 100%;
