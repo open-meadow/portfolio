@@ -3,7 +3,7 @@ import portfolio from "../db/project_database";
 
 import Navigation from "../components/javascripts/Navigation";
 import ImageCarousel from "../components/javascripts/ImageCarousel";
-import ChallengesCarousel from "../components/javascripts/ChallengesCarousel";
+// import ChallengesCarousel from "../components/javascripts/ChallengesCarousel";
 import toolIcons from "../db/toolIcons";
 
 import { BsGithub } from "react-icons/bs";
