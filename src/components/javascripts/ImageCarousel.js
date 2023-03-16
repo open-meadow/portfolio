@@ -1,18 +1,29 @@
-import Carousel from "react-bootstrap/Carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import "../styles/ImageCarousel.scss"
 
 const ImageCarousel = (props) => {
   const { currentPortfolio } = props;
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+  };
+
   const carousel_images = () => {
     const imageList = currentPortfolio.images.map((index) => {
       return (
-        <Carousel.Item>
+        <div>
           <img
-            className="image-carousel--image"
+            className="image_carousel--image"
             src={index}
             alt={currentPortfolio.name}
           />
-        </Carousel.Item>
+        </div>
       );
     });
 
@@ -20,9 +31,10 @@ const ImageCarousel = (props) => {
   };
 
   return (
-    <Carousel className="image-carousel" variant="dark">
-      {carousel_images()}
-    </Carousel>
+    // <Carousel className="image-carousel" variant="dark">
+    //   {carousel_images()}
+    // </Carousel>
+    <Slider {...settings} className="image_carousel">{carousel_images()}</Slider>
   );
 };
 

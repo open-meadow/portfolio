@@ -4,7 +4,6 @@ import ProjectSection from "../components/javascripts/ProjectSection";
 import About from "../components/javascripts/About";
 
 import "../components/styles/Home.scss";
-import ProjectSection_new from "../components/javascripts/ProjectSection_new";
 
 const Home = () => {
   return (
@@ -13,8 +12,7 @@ const Home = () => {
       <Intro />
       <div className="line">{"   "}</div>
       <h1 className="project--title">Projects</h1>
-      {/* <ProjectSection /> */}
-      <ProjectSection_new />
+      <ProjectSection />
       <About />
     </>
   );

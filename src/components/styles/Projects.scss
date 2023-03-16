@@ -69,18 +69,6 @@ main {
       &--elements {
         margin-right: 2em;
       }
-
-      .image-carousel {
-        width: 100%;
-        height: auto;
-
-        &--image {
-          border: 1px solid rgb(194, 194, 194);
-          border-radius: 20px;
-          width: 720px;
-          height: 450px;
-        }
-      }
     }
 
     &--challenges {
