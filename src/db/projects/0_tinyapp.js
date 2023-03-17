@@ -6,9 +6,7 @@ const tinyapp =  {
   description: (
     <div className="description">
       TinyApp is a full stack web application built with Node and Express that
-      allows users to shorten long URLs (à la bit.ly). It was created during
-      my studies at Lighthouse Labs, and served as an introduction to several
-      aspects of full-stack web development.
+      allows users to shorten long URLs (à la bit.ly).
     </div>
   ),
   features: (

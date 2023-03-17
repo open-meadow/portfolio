@@ -6,9 +6,7 @@ const tweeter = {
   description: (
     <div className="description">
       Tweeter is a simple, single-page Twitter clone built using HTML, CSS, JS,
-      jQuery, AJAX, Node and Express. This app has strict content moderation
-      policies. Any hate-speech posted gets deleted the second you shut down the
-      server.
+      jQuery, AJAX, Node and Express.
     </div>
   ),
   features: (
