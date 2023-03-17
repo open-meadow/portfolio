@@ -12,20 +12,25 @@ const About = () => {
       <h1>About Me</h1>
       <div className="main">
         <div className="main--text">
-          {" "}
           <p>
             Hello! My name is Rohan Varughese. (It's pronounced: Ro-hun
-            V-uhr-geese) Nice to meet you! I made this website to show the
-            projects I've made so far. I hope you like them.
+            V-uhr-geese) I'm a full stack web developer living in Toronto. I've
+            graduated with a Diploma in Full Stack Web Development from
+            Lighthouse Labs. I also have a degree in Animation from OCAD
+            University. Nice to meet you!
+            <br />
+            <br />I made this website to show the projects I've made so far. The
+            website is named 'open-meadow' based on my GitHub profile. I like
+            nature. I find that nature gives me a sense of peace and calm. When
+            picking my GitHub name, I was too shy to use my real name, but I
+            still wanted something that would seem professional. 'open-meadow'
+            felt like a name that was tranquil and limitless. I tried to make
+            the website so that it evokes a similar feeling of calm. I hope you
+            like it.
           </p>
           <p>
-            I'm a full stack web developer living in Toronto. I've graduated
-            with a Diploma in Full Stack Web Development from Lighthouse Labs. I
-            also have a degree in Animation from OCAD University.
-          </p>
-          <p>
-            I like carousels. I like hot sauce. I like pretending to be funny. I
-            like to use these tools mentioned below.
+            I bring these tools to the table. This list is not exhaustive, and
+            it will continue to be updated as I learn more.
           </p>
           <div className="tool">
             <div className="tool--single">
@@ -85,13 +90,6 @@ const About = () => {
               <span className="tool--single--name">{"CSS"}</span>
             </div>
           </div>
-          <p>
-            I don't like having to update the above section, as I pick up new
-            tools because react-icons doesn't always have the correct icon. I
-            don't like being bald at age 22. I don't like how when I tell people
-            I'm age 22, they don't believe me because how can someone be so bald
-            and ugly at age 22? I don't like tomato ketchup.
-          </p>
           <p className="answer">Online, you can find me in these places:</p>
           <div id="pers-buttons">
             <div className="main--text--links">
@@ -124,15 +122,24 @@ const About = () => {
                 </Button>
               </Link>
             </div>
+            <div className="main--text--links">
+              <Link to={"https://open-meadow.blogspot.com/"} target="_blank">
+                <Button variant="outline-dark" size="lg">
+                  {toolIcons["Blogger"]}
+                  <span id="remove-underline">Blogger</span>
+                </Button>
+              </Link>
+            </div>
           </div>
+          <p>You can contact me on my e-mail here</p>
+          {toolIcons["E-mail"]}
+          <a href="mailto:rohan.varughese200@gmail.com" id="email">
+            rohan.varughese200@gmail.com
+          </a>
         </div>
 
         <div className="main--image-wrapper">
-          <img
-            src={fix_my_face}
-            alt="Self Portrait"
-            className="hover-image"
-          />
+          <img src={fix_my_face} alt="Self Portrait" className="hover-image" />
           <img
             src={add_text}
             alt="Self Portrait"

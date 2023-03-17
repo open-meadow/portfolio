@@ -31,10 +31,11 @@
       &--links {
         font-size: 1em;
         margin-right: 1rem;
+        margin-bottom: 1rem;
 
         #remove-underline {
           text-decoration: none;
-          color: rgb(45, 45, 152);
+          color: rgb(32, 121, 251);
           margin-left: 1rem;
         }
       }
@@ -70,6 +71,10 @@
       display: block;
       opacity: 1;
     }
+  }
+  #email {
+    margin-left: 0.5rem;
+    text-decoration: none;
   }
 
   #pers-buttons {
