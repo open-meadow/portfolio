@@ -13,20 +13,20 @@ const About = () => {
       <div className="main">
         <div className="main--text">
           <p>
-            Hello! My name is Rohan Varughese. (It's pronounced: Ro-hun
-            V-uhr-geese) I'm a full stack web developer living in Toronto. I've
+            Hello! My name is <span id="name">Rohan Varughese</span>. (It's pronounced: Ro-hun
+            V-uhr-geese). Thanks for checking out my website! I'm a full stack web developer living in Toronto. I've
             graduated with a Diploma in Full Stack Web Development from
             Lighthouse Labs. I also have a degree in Animation from OCAD
             University. Nice to meet you!
             <br />
             <br />I made this website to show the projects I've made so far. The
-            website is named 'open-meadow' based on my GitHub profile. I like
-            nature. I find that nature gives me a sense of peace and calm. When
-            picking my GitHub name, I was too shy to use my real name, but I
-            still wanted something that would seem professional. 'open-meadow'
-            felt like a name that was tranquil and limitless. I tried to make
-            the website so that it evokes a similar feeling of calm. I hope you
-            like it.
+            website is named <span id="open-meadow">open-meadow</span> based on
+            my GitHub profile. I like nature. I find that nature gives me a
+            sense of peace and calm. When picking my GitHub name, I was too shy
+            to use my real name, but I still wanted something that would seem
+            professional. <span id="open-meadow">open-meadow</span> felt like a
+            name that was tranquil and limitless. I tried to make the website so
+            that it evokes a similar feeling of calm. I hope you like it.
           </p>
           <p>
             I bring these tools to the table. This list is not exhaustive, and
@@ -119,14 +119,6 @@ const About = () => {
                 <Button variant="outline-dark" size="lg">
                   {toolIcons["YouTube"]}
                   <span id="remove-underline">YouTube</span>
-                </Button>
-              </Link>
-            </div>
-            <div className="main--text--links">
-              <Link to={"https://open-meadow.blogspot.com/"} target="_blank">
-                <Button variant="outline-dark" size="lg">
-                  {toolIcons["Blogger"]}
-                  <span id="remove-underline">Blogger</span>
                 </Button>
               </Link>
             </div>
