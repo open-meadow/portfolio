@@ -15,10 +15,16 @@
 
 
 #disclaimer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   padding: 0.5em;
   margin: 0;
   font-weight: 600;
+  background-color: black;
+  color: floralwhite;
 }
 
 @media screen and (max-width: 480px) {

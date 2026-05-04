@@ -17,7 +17,8 @@ const Home = () => {
       <ProjectSection />
       <About />
       <hr/>
-      <p id="disclaimer">This Website is best viewed on Desktop</p>
+      {/* <p id="disclaimer">This Website is best viewed on Desktop</p> */}
+      <p id="disclaimer">This Website is being rebuilt</p>
     </>
   );
 };
