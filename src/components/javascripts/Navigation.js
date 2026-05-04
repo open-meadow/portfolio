@@ -13,6 +13,16 @@ import "../styles/Navigation.scss";
 const Navigation = () => {
   const navigate = useNavigate();
 
+  const handleBlogClick = () => {
+    navigate("/");
+    setTimeout(() => {
+      Scroll.scroller.scrollTo("Test Blog", {
+        duration: 500,
+        smooth: true,
+      });
+    }, 100);
+  }
+
   const handleClick = () => {
     navigate("/");
     setTimeout(() => {
@@ -47,6 +57,7 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
+              <Nav.Link onClick={handleBlogClick}>Blog</Nav.Link>
               <NavDropdown title="Projects">{generateDropdowns()}</NavDropdown>
               <Nav.Link onClick={handleClick}>About</Nav.Link>
             </Nav>
