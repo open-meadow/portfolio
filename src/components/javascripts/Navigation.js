@@ -14,13 +14,7 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   const handleBlogClick = () => {
-    navigate("/");
-    setTimeout(() => {
-      Scroll.scroller.scrollTo("Test Blog", {
-        duration: 500,
-        smooth: true,
-      });
-    }, 100);
+    navigate("/blog");
   }
 
   const handleClick = () => {
