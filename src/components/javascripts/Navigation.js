@@ -2,9 +2,9 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
-import portfolio from "../../db/project_database";
+// import portfolio from "../../db/project_database";
 
 // import navigation styles
 import "../styles/Navigation.scss";
@@ -21,17 +21,25 @@ const Navigation = () => {
     navigate("/about")
   }
 
-  const generateDropdowns = () => {
-    const dropdownList = Object.keys(portfolio).map((key) => {
-      return (
-        <NavDropdown.Item href={`/project/${key}`} key={portfolio[key].name}>
-          {portfolio[key].name}
-        </NavDropdown.Item>
-      );
-    });
+  const handleProjectsClick = () => {
+    navigate("/projects")
+  }
 
-    return dropdownList;
-  };
+  const handleResumeClick = () => {
+    navigate("/resume")
+  }
+
+  // const generateDropdowns = () => {
+  //   const dropdownList = Object.keys(portfolio).map((key) => {
+  //     return (
+  //       <NavDropdown.Item href={`/project/${key}`} key={portfolio[key].name}>
+  //         {portfolio[key].name}
+  //       </NavDropdown.Item>
+  //     );
+  //   });
+
+  //   return dropdownList;
+  // };
 
   return (
     <Navbar variant="dark" expand="lg" className="navbar">
@@ -45,10 +53,10 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              {/* <Nav.Link href="https://www.11ty.dev/docs/">Blog</Nav.Link> */}
               <Nav.Link onClick={handleBlogClick}>Blog</Nav.Link>
-              <NavDropdown title="Projects">{generateDropdowns()}</NavDropdown>
-              {/* <Nav.Link onClick={handleClick}>About</Nav.Link> */}
+              {/* <NavDropdown title="Projects">{generateDropdowns()}</NavDropdown> */}
+              <Nav.Link onClick={handleProjectsClick}>Projects</Nav.Link>
+              <Nav.Link onClick={handleResumeClick}>Resume</Nav.Link>
               <Nav.Link onClick={handleAboutClick}>About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
