@@ -5,6 +5,7 @@ import { AboutPage } from "./pages/AboutPage.tsx";
 import "./components/styles/App.scss";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Resume } from "./pages/Resume.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/project/:id" element={<Projects />}></Route>
           <Route path="/blog" element={<BlogListPage/>}></Route>
           <Route path="/about" element={<AboutPage/>}></Route>
+          <Route path="/resume" element={<Resume/>}></Route>
         </Routes>
       </Router>
     </div>

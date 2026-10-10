@@ -18,7 +18,7 @@ const About = () => {
     
     Anyways, my name is Rohan. I live in Bangalore (India). I do backend development work with Python and FastAPI, while also working creating frontends (as and when needed) with React. I've worked a bunch with RAG-based AI systems, as well as working on Agentic AI systems.
 
-    You can find my resume [here](\)
+    You can find my resume [here](src/db/resume/resume.html)
     
     I like blogs, I like tech and programming. I like Improv comedy, Celtic music, Business/Self-help books, One Piece, Driving (yes, really), and a whole bunch of other things. But for the sake of this website, lets keep things at tech and programming for now.
   `
