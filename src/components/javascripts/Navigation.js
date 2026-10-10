@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
 import portfolio from "../../db/project_database";
-import * as Scroll from "react-scroll";
 
 // import navigation styles
 import "../styles/Navigation.scss";
@@ -21,16 +20,6 @@ const Navigation = () => {
   const handleAboutClick = () => {
     navigate("/about")
   }
-
-  const handleClick = () => {
-    navigate("/");
-    setTimeout(() => {
-      Scroll.scroller.scrollTo("About", {
-        duration: 500,
-        smooth: true,
-      });
-    }, 100);
-  };
 
   const generateDropdowns = () => {
     const dropdownList = Object.keys(portfolio).map((key) => {

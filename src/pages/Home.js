@@ -1,8 +1,5 @@
 import Navigation from "../components/javascripts/Navigation";
 import Intro from "../components/javascripts/Intro";
-import ProjectSection from "../components/javascripts/ProjectSection";
-import About from "../components/javascripts/About";
-// import { TestBlog } from "../components/javascripts/Blog";
 
 import "../components/styles/Home.scss";
 import { Disclaimer } from "../components/javascripts/Disclaimer.tsx";
