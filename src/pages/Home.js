@@ -2,9 +2,10 @@ import Navigation from "../components/javascripts/Navigation";
 import Intro from "../components/javascripts/Intro";
 import ProjectSection from "../components/javascripts/ProjectSection";
 import About from "../components/javascripts/About";
-import { TestBlog } from "../components/javascripts/TestBlog";
+// import { TestBlog } from "../components/javascripts/Blog";
 
 import "../components/styles/Home.scss";
+import { Disclaimer } from "../components/javascripts/Disclaimer.tsx";
 
 const Home = () => {
   return (
@@ -18,7 +19,8 @@ const Home = () => {
       {/* <About /> */}
       {/* <hr/> */}
       {/* <p id="disclaimer">This Website is best viewed on Desktop</p> */}
-      <p id="disclaimer">This Website is being rebuilt</p>
+      {/* <p id="disclaimer">This Website is being rebuilt</p> */}
+      <Disclaimer/>
     </>
   );
 };

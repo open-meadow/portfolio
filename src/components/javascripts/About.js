@@ -5,38 +5,35 @@ import add_text from "../../images/default/add_text.png";
 
 import toolIcons from "../../db/toolIcons";
 import { Button } from "react-bootstrap";
-import Markdown from "react-markdown"
+import ReactMarkdown from "react-markdown"
+import { Disclaimer } from "./Disclaimer.tsx";
 
 const About = () => {
+
+  const aboutMe = `
+    Hello 👋
+    
+    This website is under construction. It was originally made back when I did a lot more frontend work with React.
+    But I'm much more of a backend person now. So I'm erasing and rewriting a whole bunch of stuff.
+    
+    Anyways, my name is Rohan. I live in Bangalore (India). I do backend development work with Python and FastAPI, while also working creating frontends (as and when needed) with React. I've worked a bunch with RAG-based AI systems, as well as working on Agentic AI systems.
+
+    You can find my resume [here](\)
+    
+    I like blogs, I like tech and programming. I like Improv comedy, Celtic music, Business/Self-help books, One Piece, Driving (yes, really), and a whole bunch of other things. But for the sake of this website, lets keep things at tech and programming for now.
+  `
+    .split('\n')
+    .map(line => line.trim())
+    .join('\n')
+
   return (
-    <div id="About" className="about">
-      <h1>About Me</h1>
-      <Markdown>
-        Hello World
-        <p>
-          Hello! My name is <span id="name">Rohan Varughese</span>. (It's pronounced: Ro-hun
-          V-uhr-geese). Thanks for checking out my website! I'm a full stack web developer living in Toronto. I've
-          graduated with a Diploma in Full Stack Web Development from
-          Lighthouse Labs. I also have a degree in Animation from OCAD
-          University. Nice to meet you!
-          <br />
-          <br />I made this website to show the projects I've made so far. The
-          website is named <span id="open-meadow">open-meadow</span> based on
-          my GitHub profile. I like nature. I find that nature gives me a
-          sense of peace and calm. When picking my GitHub name, I was too shy
-          to use my real name, but I still wanted something that would seem
-          professional. <span id="open-meadow">open-meadow</span> felt like a
-          name that was tranquil and limitless. I tried to make the website so
-          that it evokes a similar feeling of calm. I hope you like it.
-        </p>
-        <p>
-          I bring these tools to the table. This list is not exhaustive, and
-          it will continue to be updated as I learn more.
-        </p>
-      </Markdown>
-      <div className="main">
-        <div className="main--text">
-          <div className="tool">
+    <div className="about-bg">
+      <div id="About" className="about">
+        <h1>About Me</h1>
+        <div className="main">
+          <div className="main--text">
+            <ReactMarkdown>{aboutMe}</ReactMarkdown>
+            {/* <div className="tool">
             <div className="tool--single">
               {toolIcons["React"]}
               <span className="tool--single--name">{"React"}</span>
@@ -93,56 +90,58 @@ const About = () => {
               {toolIcons["CSS"]}
               <span className="tool--single--name">{"CSS"}</span>
             </div>
+          </div> */}
+            <p className="answer">Online, you can find me in these places:</p>
+            <div id="pers-buttons">
+              <div className="main--text--links">
+                <Link to={"https://github.com/open-meadow"} target="_blank">
+                  <Button variant="outline-dark" size="lg">
+                    {toolIcons["GitHub"]}
+                    <span id="remove-underline">Github</span>
+                  </Button>
+                </Link>
+              </div>
+              <div className="main--text--links">
+                <Link
+                  to={"https://www.linkedin.com/in/rohanvarughese/"}
+                  target="_blank"
+                >
+                  <Button variant="outline-dark" size="lg">
+                    {toolIcons["LinkedIn"]}
+                    <span id="remove-underline">LinkedIn</span>
+                  </Button>
+                </Link>
+              </div>
+              <div className="main--text--links">
+                <Link
+                  to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
+                  target="_blank"
+                >
+                  <Button variant="outline-dark" size="lg">
+                    {toolIcons["YouTube"]}
+                    <span id="remove-underline">YouTube</span>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <p>You can contact me on my e-mail here</p>
+            {toolIcons["E-mail"]}
+            <a href="mailto:rohan.varughese200@gmail.com" id="email">
+              rohan.varughese200@gmail.com
+            </a>
           </div>
-          <p className="answer">Online, you can find me in these places:</p>
-          <div id="pers-buttons">
-            <div className="main--text--links">
-              <Link to={"https://github.com/open-meadow"} target="_blank">
-                <Button variant="outline-dark" size="lg">
-                  {toolIcons["GitHub"]}
-                  <span id="remove-underline">Github</span>
-                </Button>
-              </Link>
-            </div>
-            <div className="main--text--links">
-              <Link
-                to={"https://www.linkedin.com/in/rohanvarughese/"}
-                target="_blank"
-              >
-                <Button variant="outline-dark" size="lg">
-                  {toolIcons["LinkedIn"]}
-                  <span id="remove-underline">LinkedIn</span>
-                </Button>
-              </Link>
-            </div>
-            <div className="main--text--links">
-              <Link
-                to={"https://www.youtube.com/channel/UCekoxi_cyYfd383gKMY6Icg"}
-                target="_blank"
-              >
-                <Button variant="outline-dark" size="lg">
-                  {toolIcons["YouTube"]}
-                  <span id="remove-underline">YouTube</span>
-                </Button>
-              </Link>
-            </div>
-          </div>
-          <p>You can contact me on my e-mail here</p>
-          {toolIcons["E-mail"]}
-          <a href="mailto:rohan.varughese200@gmail.com" id="email">
-            rohan.varughese200@gmail.com
-          </a>
-        </div>
 
-        <div className="main--image-wrapper">
-          <img src={fix_my_face} alt="Self Portrait" className="hover-image" />
-          <img
-            src={add_text}
-            alt="Self Portrait"
-            className="main--image-wrapper--image"
-          />
+          <div className="main--image-wrapper">
+            <img src={fix_my_face} alt="Self Portrait" className="hover-image" />
+            <img
+              src={add_text}
+              alt="Self Portrait"
+              className="main--image-wrapper--image"
+            />
+          </div>
         </div>
       </div>
+      <Disclaimer/>
     </div>
   );
 };

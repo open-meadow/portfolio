@@ -3,3 +3,5 @@
 Why am I building a new interface for this blog when I could just post to Medium or Substack instead?
 
 Good question. I'm sure I'll figure out why.
+
+In the meantime, I'm just going to leave this here as Post #1.

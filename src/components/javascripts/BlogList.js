@@ -1,7 +1,7 @@
-export const TestBlog = () => {
+export const BlogList = () => {
     return(
-        <div>
-            <h2>Test Blog</h2>
+        <div className="blog-list">
+            <h2>Blog</h2>
             <p>Right now, this is a simple section. I want to make a blog where I can write and share things.</p>
         </div>
     )

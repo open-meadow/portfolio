@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-// import Blog from "./pages/Blog.tsx";
+import { BlogListPage } from "./pages/BlogListPage.tsx";
 import { AboutPage } from "./pages/AboutPage.tsx";
 import "./components/styles/App.scss";
 
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/project/:id" element={<Projects />}></Route>
-          {/* <Route path="/blog" element={<Blog/>}></Route> */}
+          <Route path="/blog" element={<BlogListPage/>}></Route>
           <Route path="/about" element={<AboutPage/>}></Route>
         </Routes>
       </Router>

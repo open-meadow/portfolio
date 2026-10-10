@@ -14,8 +14,8 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   const handleBlogClick = () => {
-    // navigate("/blog");
-    navigate("https://www.11ty.dev/docs/")
+    navigate("/blog");
+    // navigate("https://www.11ty.dev/docs/")
   }
 
   const handleAboutClick = () => {
@@ -56,8 +56,8 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link href="https://www.11ty.dev/docs/">Blog</Nav.Link>
-              {/* <Nav.Link onClick={handleBlogClick}>Blog</Nav.Link> */}
+              {/* <Nav.Link href="https://www.11ty.dev/docs/">Blog</Nav.Link> */}
+              <Nav.Link onClick={handleBlogClick}>Blog</Nav.Link>
               <NavDropdown title="Projects">{generateDropdowns()}</NavDropdown>
               {/* <Nav.Link onClick={handleClick}>About</Nav.Link> */}
               <Nav.Link onClick={handleAboutClick}>About</Nav.Link>
