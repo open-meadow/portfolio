@@ -1,0 +1,12 @@
+.blog-list {
+    text-align: center;
+    margin: 1rem;
+    /* border: 1px solid red; */
+
+}
+
+.blog-list-element {
+    /* border: 1px solid red; */
+    margin: 0 20%;
+    text-align: left;
+}

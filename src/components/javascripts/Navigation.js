@@ -13,8 +13,7 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   const handleBlogClick = () => {
-    navigate("/blog");
-    // navigate("https://www.11ty.dev/docs/")
+    navigate("/blogs");
   }
 
   const handleAboutClick = () => {

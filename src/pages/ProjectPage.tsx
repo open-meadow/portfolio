@@ -10,6 +10,7 @@ export const ProjectPage = () => {
             <p>
                 These are the projects I worked on when I first started programming. I've made a lot more since then, but haven't had a chance to write about them in more detail. My resume has a more accurate version of my real projects
             </p>
+            <hr/>
             <ProjectSection/>
 
         </div>
