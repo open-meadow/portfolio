@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { BlogListPage } from "./pages/BlogListPage.tsx";
+import { BlogPage } from "./pages/BlogPage.tsx";
 import { AboutPage } from "./pages/AboutPage.tsx";
 import "./components/styles/App.scss";
 
@@ -17,7 +18,7 @@ function App() {
           <Route path="/projects" element={<ProjectPage/>}></Route>
           <Route path="/project/:id" element={<Projects />}></Route>
           <Route path="/blogs" element={<BlogListPage/>}></Route>
-          {/* <Route path="/blog/:id" element={<BlogPage />}></Route> */}
+          <Route path="/blog/:url" element={<BlogPage />}></Route>
           <Route path="/about" element={<AboutPage/>}></Route>
           <Route path="/resume" element={<Resume/>}></Route>
         </Routes>

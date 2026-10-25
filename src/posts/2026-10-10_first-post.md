@@ -4,9 +4,8 @@ id: 1
 date: 2026-10-10
 link: first-post
 excerptText: "Hello, hi, thanks for reading this thing I'm making right now."
+url: "first-post"
 ---
-
-# My First Post on this new Blog Section I'm creating
 
 Why am I building a new interface for this blog when I could just post to Medium or Substack instead?
 
